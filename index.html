@@ -12,20 +12,53 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/tq-favicon-primary.svg" />
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/welcome.css" />
     <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
 </head>
 
 <body>
-    <div class="wrapper">
-        <a href="./about">About</a>
-        <a href="/">Welcome</a>
-        <a href="./work">Work</a>
+    <div id="wrapper">
+        <div id="logoNav">
+            <div id="logoContainer">
+                <img src="./img/tq-favicon-primary.svg" alt="Portfolio Logo" />
+            </div>
+        </div>
+
+        <div id="homeHeading">
+            <h1>Towa Quimbayo</h1>
+            <h4>Web Developer | Software Developer</h4>
+        </div>
+
+        <!-- Desktop Navbar -->
+        <div id="navbar">
+            <a href="./about">About</a>
+            <a href="/" class="active">Welcome</a>
+            <a href="./work">Work</a>
+        </div>
+
+        <!-- Floating Socials Contact Action Button -->
+        <div id="floatingSocials">
+            <i class="bi bi-chat-fill" id="socialsIcon"></i>
+        </div>
+        <div class="linkedinIcon">
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <div class="githubIcon">
+            <i class="bi bi-github"></i>
+        </div>
+        <div class="mailIcon">
+            <i class="bi bi-envelope"></i>
+        </div>
     </div>
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

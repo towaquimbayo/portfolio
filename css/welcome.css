@@ -1,0 +1,32 @@
+:root {
+    --primaryColor: #FD515B;
+    --secondaryColor: #0F1630;
+}
+
+#wrapper #homeHeading {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#wrapper #homeHeading h1 {
+    font-family: 'keplerStd';
+    font-size: 13rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#wrapper #homeHeading h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    color: white;
+    text-align: center;
+}
