@@ -4,8 +4,6 @@
 }
 
 #wrapper #homeHeading {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 1;
     width: 100%;
     min-height: 100vh;
     padding: 3rem 7rem;

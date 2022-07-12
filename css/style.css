@@ -449,7 +449,8 @@ body::-webkit-scrollbar-thumb {
     transition: all ease 0.3s;
 }
 
-#wrapper #navbar a:hover::before {
+#wrapper #navbar a:hover::before,
+#wrapper #navbar a.active::before {
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
