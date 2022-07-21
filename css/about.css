@@ -1,0 +1,375 @@
+:root {
+    --primaryColor: #FD515B;
+    --secondaryColor: #0F1630;
+}
+
+#wrapper #profileSummary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15rem 7rem 10rem;
+    width: 100%;
+}
+
+#wrapper #profileSummary h1 {
+    display: flex;
+    font-size: 8rem;
+    font-weight: 300;
+    color: white;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+#wrapper #profileSummary h1 #nameHeadingAlt {
+    font-family: 'keplerStd';
+    font-weight: 600;
+    color: var(--primaryColor);
+    padding-left: 2rem;
+}
+
+#wrapper #profileSummary #profileDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+#wrapper #profileSummary #profileDescription h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    width: 70%;
+    line-height: 3rem;
+}
+
+#wrapper #codingLaptopBg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+}
+
+#wrapper #codingLaptopBg::before {
+    content: '';
+    height: 100%;
+    width: 80%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+#wrapper #codingLaptopBg img {
+    width: 80%;
+    height: 90vh;
+    max-height: 70rem;
+    object-fit: cover;
+    object-position: center center;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+#wrapper #profileImage {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    width: 45%;
+    padding-left: 7rem;
+    margin-top: -25%;
+    z-index: 3;
+}
+
+#wrapper #profileImage img {
+    width: 100%;
+    height: 100%;
+    max-height: 70rem;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 2rem;
+}
+
+#wrapper #profileImage #resumeContainer {
+    text-align: center;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+#wrapper #profileImage #resumeContainer a {
+    font-family: "keplerStd";
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+    padding-bottom: 1.5rem;
+}
+
+#wrapper #profileImage #resumeContainer a i {
+    padding-left: 1rem;
+}
+
+#wrapper #profileBackground {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 50%;
+    margin-top: -50rem;
+    padding: 5rem 7rem 5rem 0;
+    z-index: 2;
+}
+
+#wrapper #profileBackground #profileBackgroundContainer {
+    width: 100%;
+}
+
+#wrapper #profileBackground #profileBackgroundContainer h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+#wrapper #profileBackground #profileBackgroundContainer h2 span {
+    font-family: "keplerStd";
+    font-weight: 600;
+    font-style: italic;
+    color: var(--primaryColor);
+}
+
+#wrapper #profileBackground #profileBackgroundContainer hr {
+    border: 2px solid var(--primaryColor);
+    border-radius: 10rem;
+    width: 5rem;
+}
+
+#wrapper #profileBackground #profileBackgroundContainer p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    padding-top: 3rem;
+    line-height: 2.5rem;
+}
+
+#wrapper #skills {
+    width: 100%;
+    margin-top: 20rem;
+    padding: 10rem 0;
+}
+
+#wrapper #skills h1 {
+    font-family: "kelperStd";
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+    padding: 0 7rem 1.5rem;
+}
+
+#wrapper #skills hr {
+    border: 2px solid var(--primaryColor);
+    border-radius: 10rem;
+    width: 5rem;
+    margin: 0 7rem;
+}
+
+#wrapper #skills #skillsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 7rem 0 5rem;
+    margin: 0;
+}
+
+#wrapper #skills #skillsList .skillContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    height: 10rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #skills #skillsList .skillContainer.active,
+#wrapper #skills #skillsList .skillContainer:hover {
+    background: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+}
+
+#wrapper #skills #skillsList .skillContainer p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+#wrapper #techTools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#wrapper #techTools #scrollTechTools {
+    font-family: "keplerStd";
+    font-size: 30rem;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    color: white;
+    white-space: nowrap;
+    transform: translateX(0);
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    -ms-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+}
+
+#wrapper #toolsGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10rem 7rem;
+}
+
+#wrapper #toolsGrid .toolsGridBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 33%;
+    padding-bottom: 5rem;
+}
+
+#wrapper #toolsGrid .toolsGridBox img {
+    width: 30%;
+    max-height: 5rem;
+    object-fit: contain;
+    object-position: center center;
+}
+
+#wrapper #toolsGrid .toolsGridBox h2 {
+    width: 70%;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    align-self: center;
+    padding-left: 2rem;
+}
+
+#wrapper #contactSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5rem 7rem 10rem;
+}
+
+#wrapper #contactSec #contactLogo {
+    width: 20%;
+}
+
+#wrapper #contactSec #contactLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+#wrapper #contactSec #contactContent {
+    width: 80%;
+    align-self: center;
+    padding-left: 10rem;
+}
+
+#wrapper #contactSec #contactContent p {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 5rem;
+    color: white;
+}
+
+#wrapper #contactSec #contactContent p a {
+    font-family: "keplerStd";
+    color: var(--primaryColor);
+}
+
+#wrapper #letsWork {
+    position: relative;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    padding-bottom: 15rem;
+}
+
+#wrapper #letsWork #scrollingText {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#wrapper #letsWork #scrollingText.cloned {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#wrapper #letsWork #scrollingText li {
+    float: left;
+    padding-left: 2rem;
+}
+
+#wrapper #letsWork #scrollingText li h2 {
+    font-family: "keplerStd";
+    font-size: 6rem;
+    font-weight: 300;
+    color: white;
+    line-height: 3rem;
+    padding: 5rem 0;
+    white-space: nowrap;
+}
+
+#wrapper #letsWork #scrollingText .scrollContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15rem;
+    max-height: 15rem;
+}
+
+#wrapper #letsWork #scrollingText .scrollContainer .redDot {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+    margin: 0 3rem;
+}

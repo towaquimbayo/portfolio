@@ -1,0 +1,24 @@
+:root {
+    --primaryColor: #FD515B;
+    --secondaryColor: #0F1630;
+}
+
+@media (max-width: 575.98px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+
+}
+
+@media (min-width: 2500px) {
+    
+}
