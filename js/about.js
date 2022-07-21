@@ -24,19 +24,17 @@ function shuffle(array) {
     return array;
 }
 
-
+// Variables for lets work scrolling event
 const letsWork = $("#letsWork");
-const scrollText = letsWork.find("#scrollingText");
+const scrollText = letsWork.find(".scrollingText");
 const clonedList = scrollText.clone();
 var listWidth = 100;
+const endPos = letsWork.width() - listWidth;
 
 scrollText.find("li").each(function (i) {
     listWidth += $(this, i).outerWidth(true);
 });
 
-var endPos = letsWork.width() - listWidth;
-
-console.log(listWidth)
 
 scrollText.add(clonedList).css({
     "width": listWidth + "px"
@@ -44,9 +42,12 @@ scrollText.add(clonedList).css({
 
 clonedList.addClass("cloned").appendTo(letsWork);
 
-//TimelineMax
-var infinite = new TimelineMax({ repeat: -1, paused: true });
-var time = 15;
+// TimelineMax for lets work scrolling event
+const infinite = new TimelineMax({
+    repeat: -1,
+    paused: true
+});
+const time = 15;
 
 infinite
     .fromTo(scrollText, time, { rotation: 0.01, x: 0 }, { force3D: true, x: -listWidth, ease: Linear.easeNone }, 0)
@@ -57,24 +58,19 @@ infinite
     .progress(1).progress(0)
     .play();
 
-//Pause/Play		
+// Pause and Play for lets work scrolling event
 letsWork.on("mouseenter", function () {
     infinite.pause();
 }).on("mouseleave", function () {
     infinite.play();
 });
 
+// Tech Tools transformation on scroll
+var banner = $('#scrollTechTools'),
+    transform = parseInt(banner.css('transform').split(',')[5]);
 
-
-
-
-
-// $(window).scroll(function () {
-//     const windowScroll = $(window).scrollTop();
-//     console.log(windowScroll / 100 + "vw")
-//     const techToolSec = "translateX(" + windowScroll / 60 + "vw)";
-
-//     $('#scrollTechTools').css({
-//         transform: techToolSec
-//     });
-// });
+$(window).scroll(function (event) {
+    banner.css({
+        "transform": "translateX(-" + transform + ($(window).scrollTop() - 3500) + "px)"
+    });
+});

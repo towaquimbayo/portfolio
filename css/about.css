@@ -233,18 +233,29 @@
 
 #wrapper #techTools #scrollTechTools {
     font-family: "keplerStd";
-    font-size: 30rem;
+    font-size: 25rem;
     font-weight: 600;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
+    -moz-text-stroke: 1px;
+    -ms-text-stroke: 1px;
+    -o-text-stroke: 1px;
     color: white;
     white-space: nowrap;
+    cursor: pointer;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
     transform: translateX(0);
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
-    -ms-transition: all ease-in-out 1s;
-    -o-transition: all ease-in-out 1s;
-    transition: all ease-in-out 1s;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
 }
 
 #wrapper #toolsGrid {
@@ -323,10 +334,9 @@
     width: 100%;
     overflow: hidden;
     cursor: pointer;
-    padding-bottom: 15rem;
 }
 
-#wrapper #letsWork #scrollingText {
+#wrapper #letsWork .scrollingText {
     position: relative;
     display: inline-block;
     list-style: none;
@@ -336,18 +346,18 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#wrapper #letsWork #scrollingText.cloned {
+#wrapper #letsWork .scrollingText.cloned {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#wrapper #letsWork #scrollingText li {
+#wrapper #letsWork .scrollingText a .letsWorkText {
     float: left;
     padding-left: 2rem;
 }
 
-#wrapper #letsWork #scrollingText li h2 {
+#wrapper #letsWork .scrollingText a .letsWorkText h2 {
     font-family: "keplerStd";
     font-size: 6rem;
     font-weight: 300;
@@ -357,7 +367,7 @@
     white-space: nowrap;
 }
 
-#wrapper #letsWork #scrollingText .scrollContainer {
+#wrapper #letsWork .scrollingText a .scrollContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -365,11 +375,15 @@
     max-height: 15rem;
 }
 
-#wrapper #letsWork #scrollingText .scrollContainer .redDot {
+#wrapper #letsWork .scrollingText a .scrollContainer .redDot {
     display: inline-block;
     height: 2rem;
     width: 2rem;
     background-color: var(--primaryColor);
     border-radius: 50%;
     margin: 0 3rem;
+}
+
+#wrapper .spacer {
+    height: 15rem;
 }
