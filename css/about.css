@@ -258,6 +258,13 @@
     transition: all ease-out 0.3s;
 }
 
+#wrapper #techTools #scrollTechTools.changeBg {
+    -webkit-text-fill-color: var(--secondaryColor);
+    -moz-text-fill-color: var(--secondaryColor);
+    -ms-text-fill-color: var(--secondaryColor);
+    -o-text-fill-color: var(--secondaryColor);
+}
+
 #wrapper #toolsGrid {
     display: flex;
     flex-direction: row;
@@ -289,6 +296,10 @@
     color: white;
     align-self: center;
     padding-left: 2rem;
+}
+
+#wrapper #toolsGrid .toolsGridBox h2.changeBg {
+    color: var(--secondaryColor);
 }
 
 #wrapper #contactSec {
@@ -323,6 +334,10 @@
     color: white;
 }
 
+#wrapper #contactSec #contactContent p.changeBg {
+    color: var(--secondaryColor);
+}
+
 #wrapper #contactSec #contactContent p a {
     font-family: "keplerStd";
     color: var(--primaryColor);
@@ -346,6 +361,11 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+#wrapper #letsWork .scrollingText.changeBg {
+    border-top: 1px solid rgba(15, 22, 48, 0.3);
+    border-bottom: 1px solid rgba(15, 22, 48, 0.3);
+}
+
 #wrapper #letsWork .scrollingText.cloned {
     position: absolute;
     top: 0;
@@ -357,7 +377,15 @@
     padding-left: 2rem;
 }
 
-#wrapper #letsWork .scrollingText a .letsWorkText h2 {
+#wrapper #letsWork .scrollingText a .letsWorkText .scrollContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15rem;
+    max-height: 15rem;
+}
+
+#wrapper #letsWork .scrollingText a .letsWorkText .scrollContainer h2 {
     font-family: "keplerStd";
     font-size: 6rem;
     font-weight: 300;
@@ -367,12 +395,9 @@
     white-space: nowrap;
 }
 
-#wrapper #letsWork .scrollingText a .scrollContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 15rem;
-    max-height: 15rem;
+#wrapper #letsWork .scrollingText a .letsWorkText .scrollContainer h2.changeBg,
+#wrapper #letsWork .scrollingText a .cloned .scrollContainer h2.changeBg {
+    color: var(--secondaryColor);
 }
 
 #wrapper #letsWork .scrollingText a .scrollContainer .redDot {

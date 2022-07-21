@@ -1,5 +1,85 @@
+// Variables for changing bg / text color 
+const techToolsText = document.querySelectorAll('.toolsGridBox h2');
+const letsWorkText = document.querySelectorAll('.scrollContainer h2');
+const scrollingTextContainer = document.querySelectorAll('.scrollingText');
+
+// Set time to let cloend content load first
+var letsWorkTextCloned;
+setTimeout(() => {
+    letsWorkTextCloned = document.querySelectorAll('.cloned .scrollContainer h2');
+}, 300);
+
+
+// Variables for lets work scrolling event
+const letsWork = $("#letsWork");
+const scrollText = letsWork.find(".scrollingText");
+const clonedList = scrollText.clone();
+var listWidth = 100;
+const endPos = letsWork.width() - listWidth;
+const infinite = new TimelineMax({
+    repeat: -1,
+    paused: true
+});
+const time = 15;
+
+// Tech Tools transformation on scroll
+const techTools = $('#scrollTechTools')
+const transform = parseInt(techTools.css('transform').split(',')[5]);
+
 $(document).ready(function () {
     shuffleSkills();
+
+    window.onscroll = function () {
+        if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
+            document.querySelector('#wrapper').classList.add('changeBg');
+            document.querySelector('#scrollTechTools').classList.add('changeBg');
+            for (var i = 0; i < techToolsText.length; i++) {
+                techToolsText[i].classList.add('changeBg');
+            }
+            document.querySelector('#contactContent p').classList.add('changeBg');
+            for (var i = 0; i < letsWorkText.length; i++) {
+                letsWorkText[i].classList.add('changeBg');
+            }
+            for (var i = 0; i < scrollingTextContainer.length; i++) {
+                scrollingTextContainer[i].classList.add('changeBg');
+            }
+            // Set time to let cloend content load first
+            setTimeout(() => {
+                document.querySelector('.cloned').classList.add('changeBg');
+            }, 300);
+            setTimeout(() => {
+                for (var i = 0; i < letsWorkTextCloned.length; i++) {
+                    letsWorkTextCloned[i].classList.add('changeBg');
+                }
+            }, 500);
+        } else {
+            document.querySelector('#wrapper').classList.remove('changeBg');
+            document.querySelector('#scrollTechTools').classList.remove('changeBg');
+            for (var i = 0; i < techToolsText.length; i++) {
+                techToolsText[i].classList.remove('changeBg');
+            }
+            document.querySelector('#contactContent p').classList.remove('changeBg');
+            for (var i = 0; i < letsWorkText.length; i++) {
+                letsWorkText[i].classList.remove('changeBg');
+            }
+            for (var i = 0; i < scrollingTextContainer.length; i++) {
+                scrollingTextContainer[i].classList.remove('changeBg');
+            }
+            // Set time to let cloend content load first
+            setTimeout(() => {
+                document.querySelector('.cloned').classList.remove('changeBg');
+            }, 300);
+            setTimeout(() => {
+                for (var i = 0; i < letsWorkTextCloned.length; i++) {
+                    letsWorkTextCloned[i].classList.remove('changeBg');
+                }
+            }, 500);
+        }
+
+        techTools.css({
+            "transform": "translateX(-" + transform + ($(window).scrollTop() - 3500) + "px)"
+        });
+    }
 });
 
 setInterval(shuffleSkills, 3000);
@@ -24,17 +104,9 @@ function shuffle(array) {
     return array;
 }
 
-// Variables for lets work scrolling event
-const letsWork = $("#letsWork");
-const scrollText = letsWork.find(".scrollingText");
-const clonedList = scrollText.clone();
-var listWidth = 100;
-const endPos = letsWork.width() - listWidth;
-
 scrollText.find("li").each(function (i) {
     listWidth += $(this, i).outerWidth(true);
 });
-
 
 scrollText.add(clonedList).css({
     "width": listWidth + "px"
@@ -43,12 +115,6 @@ scrollText.add(clonedList).css({
 clonedList.addClass("cloned").appendTo(letsWork);
 
 // TimelineMax for lets work scrolling event
-const infinite = new TimelineMax({
-    repeat: -1,
-    paused: true
-});
-const time = 15;
-
 infinite
     .fromTo(scrollText, time, { rotation: 0.01, x: 0 }, { force3D: true, x: -listWidth, ease: Linear.easeNone }, 0)
     .fromTo(clonedList, time, { rotation: 0.01, x: listWidth }, { force3D: true, x: 0, ease: Linear.easeNone }, 0)
@@ -63,14 +129,4 @@ letsWork.on("mouseenter", function () {
     infinite.pause();
 }).on("mouseleave", function () {
     infinite.play();
-});
-
-// Tech Tools transformation on scroll
-var banner = $('#scrollTechTools'),
-    transform = parseInt(banner.css('transform').split(',')[5]);
-
-$(window).scroll(function (event) {
-    banner.css({
-        "transform": "translateX(-" + transform + ($(window).scrollTop() - 3500) + "px)"
-    });
 });

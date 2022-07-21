@@ -356,6 +356,10 @@ body {
     padding: 0;
     min-height: 100%;
     position: relative;
+    background: -webkit-radial-gradient(120% 120% at 50% 50%, #0C142F 0%, #000000 100%);  
+    background: -moz-radial-gradient(120% 120% at 50% 50%, #0C142F 0%, #000000 100%);  
+    background: -ms-radial-gradient(120% 120% at 50% 50%, #0C142F 0%, #000000 100%);  
+    background: -o-radial-gradient(120% 120% at 50% 50%, #0C142F 0%, #000000 100%);  
     background: radial-gradient(120% 120% at 50% 50%, #0C142F 0%, #000000 100%);
     background-position: center center;
     background-repeat: repeat-y;
@@ -373,6 +377,19 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background-color: var(--primaryColor);
+}
+
+#wrapper {
+    background-color: transparent;
+    -webkit-transition: background-color ease-in-out 0.3s;
+    -moz-transition: background-color ease-in-out 0.3s;
+    -ms-transition: background-color ease-in-out 0.3s;
+    -o-transition: background-color ease-in-out 0.3s;
+    transition: background-color ease-in-out 0.3s;
+}
+
+#wrapper.changeBg {
+    background-color: white;
 }
 
 #wrapper #logoNav {
@@ -404,7 +421,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 5;
 }
 
-#wrapper #navbar a {
+#wrapper #navbar .navLink {
     font-family: 'ttNormsPro';
     font-size: 1.2rem;
     font-weight: 400;
@@ -419,16 +436,16 @@ body::-webkit-scrollbar-thumb {
     transition: all ease-in-out 0.3s;
 }
 
-#wrapper #navbar a.active,
-#wrapper #navbar a:hover {
+#wrapper #navbar .navLink.active,
+#wrapper #navbar .navLink:hover {
     color: var(--primaryColor);
 }
 
-#wrapper #navbar a.active {
+#wrapper #navbar .navLink.active {
     font-weight: 500;
 }
 
-#wrapper #navbar a::before {
+#wrapper #navbar .navLink::before {
     content: "";
     position: absolute;
     display: block;
@@ -449,8 +466,8 @@ body::-webkit-scrollbar-thumb {
     transition: all ease 0.3s;
 }
 
-#wrapper #navbar a:hover::before,
-#wrapper #navbar a.active::before {
+#wrapper #navbar .navLink:hover::before,
+#wrapper #navbar .navLink.active::before {
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
