@@ -4,10 +4,10 @@ const letsWorkText = document.querySelectorAll('.scrollContainer h2');
 const scrollingTextContainer = document.querySelectorAll('.scrollingText');
 
 // Set time to let content load first
-var navLinks;
+var navLinksColor;
 setTimeout(() => {
-    navLinks = document.querySelectorAll('.navLink');
-}, 300);
+    navLinksColor = document.querySelectorAll('.navLink');
+}, 500);
 
 var socialIcons;
 setTimeout(() => {
@@ -67,8 +67,8 @@ $(document).ready(function () {
                     letsWorkTextCloned[i].classList.add('changeBg');
                 }
             }, 500);
-            for (var i = 0; i < navLinks.length; i++) {
-                navLinks[i].classList.add('changeBg');
+            for (var i = 0; i < navLinksColor.length; i++) {
+                navLinksColor[i].classList.add('changeBg');
             }
             for (var i = 0; i < socialIcons.length; i++) {
                 socialIcons[i].classList.add('changeBg');
@@ -98,8 +98,8 @@ $(document).ready(function () {
                     letsWorkTextCloned[i].classList.remove('changeBg');
                 }
             }, 500);
-            for (var i = 0; i < navLinks.length; i++) {
-                navLinks[i].classList.remove('changeBg');
+            for (var i = 0; i < navLinksColor.length; i++) {
+                navLinksColor[i].classList.remove('changeBg');
             }
             for (var i = 0; i < socialIcons.length; i++) {
                 socialIcons[i].classList.remove('changeBg');
