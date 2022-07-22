@@ -62,11 +62,9 @@ $(document).ready(function () {
             setTimeout(() => {
                 document.querySelector('.cloned').classList.add('changeBg');
             }, 300);
-            setTimeout(() => {
-                for (var i = 0; i < letsWorkTextCloned.length; i++) {
-                    letsWorkTextCloned[i].classList.add('changeBg');
-                }
-            }, 500);
+            for (var i = 0; i < letsWorkTextCloned.length; i++) {
+                letsWorkTextCloned[i].classList.add('changeBg');
+            }
             for (var i = 0; i < navLinksColor.length; i++) {
                 navLinksColor[i].classList.add('changeBg');
             }
@@ -93,11 +91,9 @@ $(document).ready(function () {
             setTimeout(() => {
                 document.querySelector('.cloned').classList.remove('changeBg');
             }, 300);
-            setTimeout(() => {
-                for (var i = 0; i < letsWorkTextCloned.length; i++) {
-                    letsWorkTextCloned[i].classList.remove('changeBg');
-                }
-            }, 500);
+            for (var i = 0; i < letsWorkTextCloned.length; i++) {
+                letsWorkTextCloned[i].classList.remove('changeBg');
+            }
             for (var i = 0; i < navLinksColor.length; i++) {
                 navLinksColor[i].classList.remove('changeBg');
             }
