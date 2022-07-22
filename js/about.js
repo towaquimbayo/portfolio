@@ -3,7 +3,22 @@ const techToolsText = document.querySelectorAll('.toolsGridBox h2');
 const letsWorkText = document.querySelectorAll('.scrollContainer h2');
 const scrollingTextContainer = document.querySelectorAll('.scrollingText');
 
-// Set time to let cloend content load first
+// Set time to let content load first
+var navLinks;
+setTimeout(() => {
+    navLinks = document.querySelectorAll('.navLink');
+}, 300);
+
+var socialIcons;
+setTimeout(() => {
+    socialIcons = document.querySelectorAll('.contactIcon');
+}, 300);
+
+var socialIconsColor;
+setTimeout(() => {
+    socialIconsColor = document.querySelectorAll('.contactIcon i');
+}, 300);
+
 var letsWorkTextCloned;
 setTimeout(() => {
     letsWorkTextCloned = document.querySelectorAll('.cloned .scrollContainer h2');
@@ -52,6 +67,15 @@ $(document).ready(function () {
                     letsWorkTextCloned[i].classList.add('changeBg');
                 }
             }, 500);
+            for (var i = 0; i < navLinks.length; i++) {
+                navLinks[i].classList.add('changeBg');
+            }
+            for (var i = 0; i < socialIcons.length; i++) {
+                socialIcons[i].classList.add('changeBg');
+            }
+            for (var i = 0; i < socialIconsColor.length; i++) {
+                socialIconsColor[i].classList.add('changeBg');
+            }
         } else {
             document.querySelector('#wrapper').classList.remove('changeBg');
             document.querySelector('#scrollTechTools').classList.remove('changeBg');
@@ -74,6 +98,15 @@ $(document).ready(function () {
                     letsWorkTextCloned[i].classList.remove('changeBg');
                 }
             }, 500);
+            for (var i = 0; i < navLinks.length; i++) {
+                navLinks[i].classList.remove('changeBg');
+            }
+            for (var i = 0; i < socialIcons.length; i++) {
+                socialIcons[i].classList.remove('changeBg');
+            }
+            for (var i = 0; i < socialIconsColor.length; i++) {
+                socialIconsColor[i].classList.remove('changeBg');
+            }
         }
 
         techTools.css({
