@@ -1,0 +1,17 @@
+:root {
+    --primaryColor: #FD515B;
+    --secondaryColor: #0F1630;
+}
+
+.singleWorkBanner {
+    width: 100%;
+    height: 100vh;
+}
+
+#dowcoBanner {
+    background: url('../img/dowco-thumb.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
