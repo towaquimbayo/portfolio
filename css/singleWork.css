@@ -3,12 +3,12 @@
     --secondaryColor: #0F1630;
 }
 
-.singleWorkBanner {
+#wrapper #mainContainer .singleWorkBanner {
     width: 100%;
     height: 100vh;
 }
 
-#dowcoBanner {
+#wrapper #mainContainer #dowcoBanner {
     background: url('../img/dowco-thumb.png');
     background-position: center;
     background-repeat: no-repeat;

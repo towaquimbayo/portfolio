@@ -3,7 +3,7 @@
     --secondaryColor: #0F1630;
 }
 
-#wrapper #profileSummary {
+#wrapper #mainContainer #profileSummary {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,7 +11,7 @@
     width: 100%;
 }
 
-#wrapper #profileSummary h1 {
+#wrapper #mainContainer #profileSummary h1 {
     display: flex;
     font-size: 8rem;
     font-weight: 300;
@@ -20,14 +20,14 @@
     padding-bottom: 3rem;
 }
 
-#wrapper #profileSummary h1 #nameHeadingAlt {
+#wrapper #mainContainer #profileSummary h1 #nameHeadingAlt {
     font-family: 'keplerStd';
     font-weight: 600;
     color: var(--primaryColor);
     padding-left: 2rem;
 }
 
-#wrapper #profileSummary #profileDescription {
+#wrapper #mainContainer #profileSummary #profileDescription {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -35,7 +35,7 @@
     padding: 5rem 0;
 }
 
-#wrapper #profileSummary #profileDescription h4 {
+#wrapper #mainContainer #profileSummary #profileDescription h4 {
     font-size: 1.8rem;
     font-weight: 400;
     color: white;
@@ -43,7 +43,7 @@
     line-height: 3rem;
 }
 
-#wrapper #codingLaptopBg {
+#wrapper #mainContainer #codingLaptopBg {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -51,7 +51,7 @@
     width: 100%;
 }
 
-#wrapper #codingLaptopBg::before {
+#wrapper #mainContainer #codingLaptopBg::before {
     content: '';
     height: 100%;
     width: 80%;
@@ -70,7 +70,7 @@
     z-index: 1;
 }
 
-#wrapper #codingLaptopBg img {
+#wrapper #mainContainer #codingLaptopBg img {
     width: 80%;
     height: 90vh;
     max-height: 70rem;
@@ -80,7 +80,7 @@
     border-bottom-left-radius: 2rem;
 }
 
-#wrapper #profileImage {
+#wrapper #mainContainer #profileImage {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -91,7 +91,7 @@
     z-index: 3;
 }
 
-#wrapper #profileImage img {
+#wrapper #mainContainer #profileImage img {
     width: 100%;
     height: 100%;
     max-height: 70rem;
@@ -100,13 +100,13 @@
     border-radius: 2rem;
 }
 
-#wrapper #profileImage #resumeContainer {
+#wrapper #mainContainer #profileImage #resumeContainer {
     text-align: center;
     width: 100%;
     padding: 5rem 0;
 }
 
-#wrapper #profileImage #resumeContainer a {
+#wrapper #mainContainer #profileImage #resumeContainer a {
     font-family: "keplerStd";
     font-size: 2rem;
     font-weight: 400;
@@ -116,11 +116,11 @@
     padding-bottom: 1.5rem;
 }
 
-#wrapper #profileImage #resumeContainer a i {
+#wrapper #mainContainer #profileImage #resumeContainer a i {
     padding-left: 1rem;
 }
 
-#wrapper #profileBackground {
+#wrapper #mainContainer #profileBackground {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -131,11 +131,11 @@
     z-index: 2;
 }
 
-#wrapper #profileBackground #profileBackgroundContainer {
+#wrapper #mainContainer #profileBackground #profileBackgroundContainer {
     width: 100%;
 }
 
-#wrapper #profileBackground #profileBackgroundContainer h2 {
+#wrapper #mainContainer #profileBackground #profileBackgroundContainer h2 {
     font-size: 3.5rem;
     font-weight: 400;
     color: white;
@@ -143,20 +143,20 @@
     padding-bottom: 2rem;
 }
 
-#wrapper #profileBackground #profileBackgroundContainer h2 span {
+#wrapper #mainContainer #profileBackground #profileBackgroundContainer h2 span {
     font-family: "keplerStd";
     font-weight: 600;
     font-style: italic;
     color: var(--primaryColor);
 }
 
-#wrapper #profileBackground #profileBackgroundContainer hr {
+#wrapper #mainContainer #profileBackground #profileBackgroundContainer hr {
     border: 2px solid var(--primaryColor);
     border-radius: 10rem;
     width: 5rem;
 }
 
-#wrapper #profileBackground #profileBackgroundContainer p {
+#wrapper #mainContainer #profileBackground #profileBackgroundContainer p {
     font-size: 1.5rem;
     font-weight: 400;
     color: white;
@@ -164,13 +164,13 @@
     line-height: 2.5rem;
 }
 
-#wrapper #skills {
+#wrapper #mainContainer #skills {
     width: 100%;
     margin-top: 20rem;
     padding: 10rem 0;
 }
 
-#wrapper #skills h1 {
+#wrapper #mainContainer #skills h1 {
     font-family: "kelperStd";
     font-size: 4rem;
     font-weight: 400;
@@ -178,14 +178,14 @@
     padding: 0 7rem 1.5rem;
 }
 
-#wrapper #skills hr {
+#wrapper #mainContainer #skills hr {
     border: 2px solid var(--primaryColor);
     border-radius: 10rem;
     width: 5rem;
     margin: 0 7rem;
 }
 
-#wrapper #skills #skillsList {
+#wrapper #mainContainer #skills #skillsList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -194,7 +194,7 @@
     margin: 0;
 }
 
-#wrapper #skills #skillsList .skillContainer {
+#wrapper #mainContainer #skills #skillsList .skillContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,19 +210,19 @@
     transition: all ease-in-out 0.3s;
 }
 
-#wrapper #skills #skillsList .skillContainer.active,
-#wrapper #skills #skillsList .skillContainer:hover {
+#wrapper #mainContainer #skills #skillsList .skillContainer.active,
+#wrapper #mainContainer #skills #skillsList .skillContainer:hover {
     background: var(--primaryColor);
     border: 1px solid var(--primaryColor);
 }
 
-#wrapper #skills #skillsList .skillContainer p {
+#wrapper #mainContainer #skills #skillsList .skillContainer p {
     font-size: 1.5rem;
     font-weight: 400;
     color: white;
 }
 
-#wrapper #techTools {
+#wrapper #mainContainer #techTools {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -231,7 +231,7 @@
     overflow-x: hidden;
 }
 
-#wrapper #techTools #scrollTechTools {
+#wrapper #mainContainer #techTools #scrollTechTools {
     font-family: "keplerStd";
     font-size: 25rem;
     font-weight: 600;
@@ -258,14 +258,14 @@
     transition: all ease-out 0.3s;
 }
 
-#wrapper #techTools #scrollTechTools.changeBg {
+#wrapper #mainContainer #techTools #scrollTechTools.changeBg {
     -webkit-text-fill-color: var(--secondaryColor);
     -moz-text-fill-color: var(--secondaryColor);
     -ms-text-fill-color: var(--secondaryColor);
     -o-text-fill-color: var(--secondaryColor);
 }
 
-#wrapper #toolsGrid {
+#wrapper #mainContainer #toolsGrid {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -274,7 +274,7 @@
     padding: 10rem 7rem;
 }
 
-#wrapper #toolsGrid .toolsGridBox {
+#wrapper #mainContainer #toolsGrid .toolsGridBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -282,14 +282,14 @@
     padding-bottom: 5rem;
 }
 
-#wrapper #toolsGrid .toolsGridBox img {
+#wrapper #mainContainer #toolsGrid .toolsGridBox img {
     width: 30%;
     max-height: 5rem;
     object-fit: contain;
     object-position: center center;
 }
 
-#wrapper #toolsGrid .toolsGridBox h2 {
+#wrapper #mainContainer #toolsGrid .toolsGridBox h2 {
     width: 70%;
     font-size: 2rem;
     font-weight: 400;
@@ -298,11 +298,11 @@
     padding-left: 2rem;
 }
 
-#wrapper #toolsGrid .toolsGridBox h2.changeBg {
+#wrapper #mainContainer #toolsGrid .toolsGridBox h2.changeBg {
     color: var(--secondaryColor);
 }
 
-#wrapper #contactSec {
+#wrapper #mainContainer #contactSec {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -310,40 +310,40 @@
     padding: 5rem 7rem 10rem;
 }
 
-#wrapper #contactSec #contactLogo {
+#wrapper #mainContainer #contactSec #contactLogo {
     width: 20%;
 }
 
-#wrapper #contactSec #contactLogo img {
+#wrapper #mainContainer #contactSec #contactLogo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center center;
 }
 
-#wrapper #contactSec #contactContent {
+#wrapper #mainContainer #contactSec #contactContent {
     width: 80%;
     align-self: center;
     padding-left: 10rem;
 }
 
-#wrapper #contactSec #contactContent p {
+#wrapper #mainContainer #contactSec #contactContent p {
     font-size: 3rem;
     font-weight: 400;
     line-height: 5rem;
     color: white;
 }
 
-#wrapper #contactSec #contactContent p.changeBg {
+#wrapper #mainContainer #contactSec #contactContent p.changeBg {
     color: var(--secondaryColor);
 }
 
-#wrapper #contactSec #contactContent p a {
+#wrapper #mainContainer #contactSec #contactContent p a {
     font-family: "keplerStd";
     color: var(--primaryColor);
 }
 
-#wrapper #letsWork {
+#wrapper #mainContainer #letsWork {
     position: relative;
     left: 0;
     width: 100%;
@@ -351,7 +351,7 @@
     cursor: pointer;
 }
 
-#wrapper #letsWork .scrollingText {
+#wrapper #mainContainer #letsWork .scrollingText {
     position: relative;
     display: inline-block;
     list-style: none;
@@ -361,23 +361,23 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#wrapper #letsWork .scrollingText.changeBg {
+#wrapper #mainContainer #letsWork .scrollingText.changeBg {
     border-top: 1px solid rgba(15, 22, 48, 0.3);
     border-bottom: 1px solid rgba(15, 22, 48, 0.3);
 }
 
-#wrapper #letsWork .scrollingText.cloned {
+#wrapper #mainContainer #letsWork .scrollingText.cloned {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#wrapper #letsWork .scrollingText a .letsWorkText {
+#wrapper #mainContainer #letsWork .scrollingText a .letsWorkText {
     float: left;
     padding-left: 2rem;
 }
 
-#wrapper #letsWork .scrollingText a .letsWorkText .scrollContainer {
+#wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -385,7 +385,7 @@
     max-height: 15rem;
 }
 
-#wrapper #letsWork .scrollingText a .letsWorkText .scrollContainer h2 {
+#wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer h2 {
     font-family: "keplerStd";
     font-size: 6rem;
     font-weight: 300;
@@ -395,12 +395,12 @@
     white-space: nowrap;
 }
 
-#wrapper #letsWork .scrollingText a .letsWorkText .scrollContainer h2.changeBg,
-#wrapper #letsWork .scrollingText a .cloned .scrollContainer h2.changeBg {
+#wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer h2.changeBg,
+#wrapper #mainContainer #letsWork .scrollingText a .cloned .scrollContainer h2.changeBg {
     color: var(--secondaryColor);
 }
 
-#wrapper #letsWork .scrollingText a .scrollContainer .redDot {
+#wrapper #mainContainer #letsWork .scrollingText a .scrollContainer .redDot {
     display: inline-block;
     height: 2rem;
     width: 2rem;
@@ -409,6 +409,6 @@
     margin: 0 3rem;
 }
 
-#wrapper .spacer {
+#wrapper #mainContainer .spacer {
     height: 15rem;
 }

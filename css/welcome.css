@@ -3,7 +3,7 @@
     --secondaryColor: #0F1630;
 }
 
-#wrapper #homeHeading {
+#wrapper #mainContainer #homeHeading {
     width: 100%;
     min-height: 100vh;
     padding: 3rem 7rem;
@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-#wrapper #homeHeading h1 {
+#wrapper #mainContainer #homeHeading h1 {
     font-family: 'keplerStd';
     font-size: 13rem;
     font-weight: 600;
@@ -21,7 +21,7 @@
     padding-bottom: 2rem;
 }
 
-#wrapper #homeHeading h4 {
+#wrapper #mainContainer #homeHeading h4 {
     font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: 0.3rem;

@@ -8,7 +8,18 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-
+    #wrapper #mainContainer #navTemp #logoNav #logoContainer {
+        padding: 2rem 3rem 0;
+    }
+    #wrapper #mainContainer #navTemp #logoNav #logoContainer a img {
+        width: 5rem;
+    }
+    #wrapper #mainContainer #navTemp #navbar {
+        display: none;
+    }
+    #wrapper #mobHamburger {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

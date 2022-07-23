@@ -2,10 +2,11 @@
  * Constant Variables.
  */
 const mainFloatSocials = $('#floatingSocials');
+const wrapper = document.getElementById('wrapper');
 var navLinks;
 setTimeout(() => {
     navLinks = document.querySelectorAll('.navLink');
-}, 500);
+}, 800);
 
 $(document).ready(function () {
     loadNav();
@@ -29,6 +30,19 @@ $(document).ready(function () {
             }
         }
     });
+
+    // Mobile Hamburger Menu function
+    document.getElementById('mobHamburger').addEventListener('click', function () {
+        wrapper.classList.toggle('active');
+        if (wrapper.classList.contains('active')) {
+            document.body.style.overflow = "hidden";
+            wrapper.style.backgroundColor = '#0F1630';
+        } else {
+            document.body.style.overflow = null;
+            wrapper.style.backgroundColor = null;
+        }
+    }, false);
+    
 });
 
 /**

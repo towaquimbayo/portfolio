@@ -3,7 +3,7 @@
     --secondaryColor: #0F1630;
 }
 
-#wrapper #workGallery {
+#wrapper #mainContainer #workGallery {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,7 +12,7 @@
     padding: 10rem 7rem 7rem;
 }
 
-#wrapper #workGallery .project {
+#wrapper #mainContainer #workGallery .project {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -22,11 +22,11 @@
     border-radius: 1.5rem;
 }
 
-#wrapper #workGallery .project:nth-child(odd) {
+#wrapper #mainContainer #workGallery .project:nth-child(odd) {
     margin-top: 10rem;
 }
 
-#wrapper #workGallery .project::before {
+#wrapper #mainContainer #workGallery .project::before {
     content: '';
     height: 100%;
     width: 100%;
@@ -42,7 +42,7 @@
 }
 
 /* Dowco */
-#wrapper #workGallery #dowco {
+#wrapper #mainContainer #workGallery #dowco {
     background: url('../img/dowco-thumb.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 }
 
 /* Pontus */
-#wrapper #workGallery #pontus {
+#wrapper #mainContainer #workGallery #pontus {
     background: url('../img/pontus-thumb.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 }
 
 /* MyMind */
-#wrapper #workGallery #mymind {
+#wrapper #mainContainer #workGallery #mymind {
     background: url('../img/mymind-thumb.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -66,14 +66,14 @@
 }
 
 /* RTO Homes */
-#wrapper #workGallery #rtohomes {
+#wrapper #mainContainer #workGallery #rtohomes {
     background: url('../img/rtohomes-thumb.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#wrapper #workGallery .project a {
+#wrapper #mainContainer #workGallery .project a {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -84,7 +84,7 @@
     z-index: 2;
 }
 
-#wrapper #workGallery .project a .projectContent h2 {
+#wrapper #mainContainer #workGallery .project a .projectContent h2 {
     font-family: 'keplerStd';
     font-size: 5rem;
     font-weight: 500;
@@ -92,13 +92,13 @@
     color: white;
 }
 
-#wrapper #workGallery .project a .projectContent hr {
+#wrapper #mainContainer #workGallery .project a .projectContent hr {
     border: 2px solid var(--primaryColor);
     border-radius: 10rem;
     width: 5rem;
 }
 
-#wrapper #workGallery .project a .projectContent h4 {
+#wrapper #mainContainer #workGallery .project a .projectContent h4 {
     font-size: 1rem;
     font-weight: 400;
     padding-top: 2rem;

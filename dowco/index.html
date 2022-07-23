@@ -23,37 +23,48 @@
 
 <body>
     <div id="wrapper">
-        <!-- Nav Template -->
-        <div id="navTemp"></div>
+        <!-- Mobile Nav -->
+        <div id="mobHamburger"></div>
+        <ul id="mobNavLinks">
+            <li><a class="navLink" href="/">Home.</a></li>
+            <li><a class="navLink" href="/about/">About.</a></li>
+            <li><a class="navLink" href="/work/">Work.</a></li>
+            <li><a class="navLink" href="mailto:towacurtis@hotmail.com">Contact.</a></li>
+        </ul>
 
-        <!-- Floating Socials Contact Action Button -->
-        <div id="floatingSocials">
-            <i class="bi bi-chat-fill" id="socialsIcon"></i>
+        <!-- Content -->
+        <div id="mainContainer">
+            <!-- Nav Template -->
+            <div id="navTemp"></div>
+
+            <!-- Floating Socials Contact Action Button -->
+            <div id="floatingSocials">
+                <i class="bi bi-chat-fill" id="socialsIcon"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/towa-quimbayo/" target="_blank">
+                <div class="linkedinIcon">
+                    <i class="bi bi-linkedin"></i>
+                </div>
+            </a>
+            <a href="https://github.com/towaquimbayo" target="_blank">
+                <div class="githubIcon">
+                    <i class="bi bi-github"></i>
+                </div>
+            </a>
+            <a href="mailto:towacurtis@hotmail.com" target="_blank">
+                <div class="mailIcon">
+                    <i class="bi bi-envelope"></i>
+                </div>
+            </a>
+
+            <div class="singleWorkBanner" id="dowcoBanner"></div>
         </div>
-        <a href="https://www.linkedin.com/in/towa-quimbayo/" target="_blank">
-            <div class="linkedinIcon contactIcon">
-                <i class="bi bi-linkedin"></i>
-            </div>
-        </a>
-        <a href="https://github.com/towaquimbayo" target="_blank">
-            <div class="githubIcon contactIcon">
-                <i class="bi bi-github"></i>
-            </div>
-        </a>
-        <a href="mailto:towacurtis@hotmail.com" target="_blank">
-            <div class="mailIcon contactIcon">
-                <i class="bi bi-envelope"></i>
-            </div>
-        </a>
-
-        <div class="singleWorkBanner" id="dowcoBanner"></div>
     </div>
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/about.js"></script>
 </body>
 
 </html>
