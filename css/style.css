@@ -652,7 +652,7 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
     color: white;
     bottom: 3rem;
-    right: 3rem;
+    right: 5rem;
     width: 4.5rem;
     height: 4.5rem;
     -webkit-transform: translateY(50%);
@@ -710,10 +710,10 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     align-items: center;
     cursor: pointer;
-    bottom: 3.75rem;
-    right: 3.75rem;
-    width: 3rem;
-    height: 3rem;
+    bottom: 3.5rem;
+    right: 5.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     -webkit-transform: translateY(0) translateX(0);
     -moz-transform: translateY(0) translateX(0);
     -ms-transform: translateY(0) translateX(0);
@@ -754,11 +754,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 #wrapper #mainContainer a .mailIcon.enter {
-    -webkit-transform: translateX(-160%) translateY(20%);
-    -moz-transform: translateX(-160%) translateY(20%);
-    -ms-transform: translateX(-160%) translateY(20%);
-    -o-transform: translateX(-160%) translateY(20%);
-    transform: translateX(-160%) translateY(20%);
+    -webkit-transform: translateX(-160%) translateY(30%);
+    -moz-transform: translateX(-160%) translateY(30%);
+    -ms-transform: translateX(-160%) translateY(30%);
+    -o-transform: translateX(-160%) translateY(30%);
+    transform: translateX(-160%) translateY(30%);
     opacity: 1;
 }
 
@@ -774,7 +774,7 @@ body::-webkit-scrollbar-thumb {
 
 #wrapper #mainContainer a .mailIcon:hover {
     opacity: 1;
-    transform: translateX(-160%) translateY(30%);
+    transform: translateX(-160%) translateY(40%);
 }
 
 #wrapper #mainContainer a .linkedinIcon i,

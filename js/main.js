@@ -6,7 +6,7 @@ const wrapper = document.getElementById('wrapper');
 var navLinks;
 setTimeout(() => {
     navLinks = document.querySelectorAll('.navLink');
-}, 800);
+}, 300);
 
 $(document).ready(function () {
     loadNav();

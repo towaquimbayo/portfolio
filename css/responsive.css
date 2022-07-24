@@ -4,15 +4,45 @@
 }
 
 @media (max-width: 575.98px) {
-
+    #wrapper #mainContainer #navTemp #logoNav #logoContainer {
+        padding: 2rem 2rem 0;
+    }
+    #wrapper #mainContainer #navTemp #navbar {
+        display: none;
+    }
+    #wrapper #mobHamburger {
+        display: block;
+        right: 2rem;
+    }
+    #wrapper #mainContainer #floatingSocials {
+        width: 4rem;
+        height: 4rem;
+        right: 2rem;
+        bottom: 2.5rem;
+    }
+    #wrapper #mainContainer a .linkedinIcon, 
+    #wrapper #mainContainer a .githubIcon, 
+    #wrapper #mainContainer a .mailIcon {
+        width: 3rem;
+        height: 3rem;
+        right: 2.5rem;
+        bottom: 2.5rem;
+    }
+    #wrapper #mainContainer #homeHeading {
+        padding: 1rem;
+    }
+    #wrapper #mainContainer #homeHeading h1 {
+        font-size: 4rem;
+    }
+    #wrapper #mainContainer #homeHeading h4 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     #wrapper #mainContainer #navTemp #logoNav #logoContainer {
         padding: 2rem 3rem 0;
-    }
-    #wrapper #mainContainer #navTemp #logoNav #logoContainer a img {
-        width: 5rem;
     }
     #wrapper #mainContainer #navTemp #navbar {
         display: none;
@@ -20,14 +50,94 @@
     #wrapper #mobHamburger {
         display: block;
     }
+    #wrapper #mainContainer #floatingSocials {
+        right: 2rem;
+    }
+    #wrapper #mainContainer a .linkedinIcon, 
+    #wrapper #mainContainer a .githubIcon, 
+    #wrapper #mainContainer a .mailIcon {
+        right: 2.5rem;
+        bottom: 3rem;
+    }
+    #wrapper #mainContainer #homeHeading {
+        padding: 3rem;
+    }
+    #wrapper #mainContainer #homeHeading h1 {
+        font-size: 6rem;
+    }
+    #wrapper #mainContainer #homeHeading h4 {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+    #wrapper #mainContainer #navTemp #logoNav #logoContainer {
+        padding: 3rem 3rem 0;
+    }
+    #wrapper #mainContainer #navTemp #navbar {
+        display: none;
+    }
+    #wrapper #mobHamburger {
+        display: block;
+    }   
+    #wrapper #mainContainer #floatingSocials {
+        right: 2rem;
+    }
+    #wrapper #mainContainer a .linkedinIcon, 
+    #wrapper #mainContainer a .githubIcon, 
+    #wrapper #mainContainer a .mailIcon {
+        right: 2.5rem;
+        bottom: 3rem;
+    }
+    #wrapper #mainContainer #homeHeading {
+        padding: 3rem;
+    }
+    #wrapper #mainContainer #homeHeading h1 {
+        font-size: 9rem;
+    }
+    #wrapper #mainContainer #homeHeading h4 {
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
+    #wrapper #mainContainer #navTemp #logoNav #logoContainer {
+        padding: 3rem 5rem 0;
+    }
+    #wrapper #mainContainer #navTemp #navbar {
+        padding: 0 20%;
+    }
+    #wrapper #mainContainer #floatingSocials {
+        right: 4rem;
+    }
+    #wrapper #mainContainer a .linkedinIcon, 
+    #wrapper #mainContainer a .githubIcon, 
+    #wrapper #mainContainer a .mailIcon {
+        right: 4.5rem;
+        bottom: 3rem;
+    }
+    #wrapper #mainContainer #homeHeading {
+        padding: 3rem 5rem;
+    }
+    #wrapper #mainContainer #homeHeading h1 {
+        font-size: 9rem;
+    }
+    #wrapper #mainContainer #homeHeading h4 {
+        font-size: 1.5rem;
+    }
+}
 
+@media (min-width: 1300px) and (max-width: 1799.98px) {
+    #wrapper #mainContainer #homeHeading {
+        padding: 3rem 5rem;
+    }
+    #wrapper #mainContainer #homeHeading h1 {
+        font-size: 9.5rem;
+    }
+    #wrapper #mainContainer #homeHeading h4 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 2500px) {
