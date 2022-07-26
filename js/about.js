@@ -35,7 +35,7 @@ const infinite = new TimelineMax({
     repeat: -1,
     paused: true
 });
-const time = 15;
+const time = 30;
 
 // Tech Tools transformation on scroll
 const techTools = $('#scrollTechTools')
