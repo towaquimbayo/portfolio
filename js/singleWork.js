@@ -34,27 +34,81 @@ $(document).ready(function () {
     }
 
     // Project Slider Controls
+    $('#projPrevNav').off();
     $('#projPrevNav').click(function () {
-        if (currCount <= 0) {
-            currCount = projSliderImgArray.length;
-        } 
-        currCount--;
-        currProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount]);
-        nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount + 1]);
-        if (currCount == projSliderImgArray.length - 1) {
-            nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[0]);
-        }
+        clearInterval(projSliderInterval);
+        currProjSliderImg.className = 'fadeTransition';
+        nextProjSliderImg.className = 'fadeTransition';
+        setTimeout(() => {
+            currProjSliderImg.className = null;
+            nextProjSliderImg.className = null;
+            if (currCount <= 0) {
+                currCount = projSliderImgArray.length;
+            }
+            currCount--;
+            setProjSliderImg();
+        }, 500);
+        projSliderInterval = setInterval(() => {
+            if (currCount >= projSliderImgArray.length - 1) {
+                currCount = -1;
+            }
+            currCount++;
+            setProjSliderImg();
+        }, 7000);
     });
 
+    $('#projNextNav').off();
     $('#projNextNav').click(function () {
-        if (currCount >= projSliderImgArray.length - 1) {
-            currCount = -1;
-        }
-        currCount++;
-        currProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount]);
-        nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount + 1]);
-        if (currCount == projSliderImgArray.length - 1) {
-            nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[0]);
-        }
+        clearInterval(projSliderInterval);
+        currProjSliderImg.className = 'fadeTransition';
+        nextProjSliderImg.className = 'fadeTransition';
+        setTimeout(() => {
+            currProjSliderImg.className = null;
+            nextProjSliderImg.className = null;
+            if (currCount >= projSliderImgArray.length - 1) {
+                currCount = -1;
+            }
+            currCount++;
+            setProjSliderImg();
+        }, 500);
+        projSliderInterval = setInterval(() => {
+            if (currCount >= projSliderImgArray.length - 1) {
+                currCount = -1;
+            }
+            currCount++;
+            setProjSliderImg();
+        }, 7000);
     });
 });
+
+// Every 7s it changes project gallery
+var projSliderInterval = setInterval(() => {
+    if (currCount >= projSliderImgArray.length - 1) {
+        currCount = -1;
+    }
+    currCount++;
+    setProjSliderImg();
+}, 7000);
+
+function setProjSliderImg() {
+    currProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount]);
+    nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount + 1]);
+    if (currCount == projSliderImgArray.length - 1) {
+        nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[0]);
+    }
+
+    // Change Project Title and link
+    if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[0]) {
+        document.getElementById('projSliderTitle').innerHTML = 'Dowco';
+        document.getElementById('projSliderLink').setAttribute('href', 'https://dowco.com/');
+    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[1]) {
+        document.getElementById('projSliderTitle').innerHTML = 'Pontus';
+        document.getElementById('projSliderLink').setAttribute('href', 'https://pontuswaterlentils.com/');
+    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[2]) {
+        document.getElementById('projSliderTitle').innerHTML = 'MyMind';
+        document.getElementById('projSliderLink').setAttribute('href', 'https://mymindweb.herokuapp.com/');
+    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[3]) {
+        document.getElementById('projSliderTitle').innerHTML = 'RTO Homes';
+        document.getElementById('projSliderLink').setAttribute('href', 'https://rtohomes.co/');
+    }
+}
