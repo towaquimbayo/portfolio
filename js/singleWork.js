@@ -1,3 +1,9 @@
+// Constant variables
+const currProjSliderImg = document.querySelector('#currProjSliderImg');
+const nextProjSliderImg = document.querySelector('#nextProjSliderImg');
+const projSliderImgArray = ['dowco-thumb.png', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'rtohomes-thumb.jpg'];
+var currCount = 0;
+
 $(document).ready(function () {
     window.onscroll = function () {
         if (window.pageYOffset >= 2000 && window.pageYOffset < 2600) {
@@ -25,6 +31,30 @@ $(document).ready(function () {
             document.querySelector('#projGallerySec4').classList.add('active');
             document.querySelector('#projGallerySec5').classList.add('active');
         }
-        // console.log(window.pageYOffset)
     }
+
+    // Project Slider Controls
+    $('#projPrevNav').click(function () {
+        if (currCount <= 0) {
+            currCount = projSliderImgArray.length;
+        } 
+        currCount--;
+        currProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount]);
+        nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount + 1]);
+        if (currCount == projSliderImgArray.length - 1) {
+            nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[0]);
+        }
+    });
+
+    $('#projNextNav').click(function () {
+        if (currCount >= projSliderImgArray.length - 1) {
+            currCount = -1;
+        }
+        currCount++;
+        currProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount]);
+        nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[currCount + 1]);
+        if (currCount == projSliderImgArray.length - 1) {
+            nextProjSliderImg.setAttribute('src', '../img/' + projSliderImgArray[0]);
+        }
+    });
 });
