@@ -1,7 +1,7 @@
 // Constant variables
 const currProjSliderImg = document.querySelector('#currProjSliderImg');
 const nextProjSliderImg = document.querySelector('#nextProjSliderImg');
-const projSliderImgArray = ['dowco-thumb.png', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'rtohomes-thumb.jpg'];
+const projSliderImgArray = ['dowco-thumb.png', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg'];
 var currCount = 0;
 
 $(document).ready(function () {
@@ -100,15 +100,18 @@ function setProjSliderImg() {
     // Change Project Title and link
     if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[0]) {
         document.getElementById('projSliderTitle').innerHTML = 'Dowco';
-        document.getElementById('projSliderLink').setAttribute('href', 'https://dowco.com/');
+        document.getElementById('projSliderLink').setAttribute('href', '/dowco/');
     } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[1]) {
         document.getElementById('projSliderTitle').innerHTML = 'Pontus';
-        document.getElementById('projSliderLink').setAttribute('href', 'https://pontuswaterlentils.com/');
+        document.getElementById('projSliderLink').setAttribute('href', '/pontus/');
     } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[2]) {
         document.getElementById('projSliderTitle').innerHTML = 'MyMind';
-        document.getElementById('projSliderLink').setAttribute('href', 'https://mymindweb.herokuapp.com/');
+        document.getElementById('projSliderLink').setAttribute('href', '/mymind/');
     } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[3]) {
         document.getElementById('projSliderTitle').innerHTML = 'RTO Homes';
-        document.getElementById('projSliderLink').setAttribute('href', 'https://rtohomes.co/');
+        document.getElementById('projSliderLink').setAttribute('href', '/rtohomes/');
+    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[4]) {
+        document.getElementById('projSliderTitle').innerHTML = 'Tudor Consulting';
+        document.getElementById('projSliderLink').setAttribute('href', '/tudorconsulting/');
     }
 }

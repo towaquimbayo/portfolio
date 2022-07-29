@@ -73,6 +73,14 @@
     background-size: cover;
 }
 
+/* Tudor Consulting */
+#wrapper #mainContainer #workGallery #tudorconsulting {
+    background: url('../img/tudorconsulting-thumb.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #wrapper #mainContainer #workGallery .project a {
     display: flex;
     flex-direction: column;

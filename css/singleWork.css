@@ -16,6 +16,38 @@
     background-attachment: fixed;
 }
 
+#wrapper #mainContainer #pontusBanner {
+    background: url('../img/pontus-thumb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapper #mainContainer #mymindBanner {
+    background: url('../img/mymind-thumb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapper #mainContainer #rtohomesBanner {
+    background: url('../img/rtohomes-thumb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapper #mainContainer #tudorconsultingBanner {
+    background: url('../img/tudorconsulting-thumb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #wrapper #mainContainer #projDesc {
     display: flex;
     flex-direction: row;
@@ -68,6 +100,14 @@
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--secondaryColor);
+    line-height: 2.2rem;
+    padding-top: 1.5rem;
+}
+
+#wrapper #mainContainer #projDesc .projCol-6 .projDescContainer a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
     line-height: 2.2rem;
     padding-top: 1.5rem;
 }
@@ -321,9 +361,13 @@
 }
 
 #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn #projSliderLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 1.3rem;
     font-weight: 400;
     width: 100%;
+    height: 100%;
     color: white;
     text-align: center;
     text-transform: uppercase;
