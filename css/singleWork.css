@@ -248,11 +248,13 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
+    position: relative;
     -webkit-transition: all ease-in-out 0.3s;
     -moz-transition: all ease-in-out 0.3s;
     -ms-transition: all ease-in-out 0.3s;
     -o-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
+    z-index: 2;
 }
 
 #wrapper #mainContainer #projGallery #projGallerySec4 img {
@@ -264,11 +266,13 @@
     margin-top: -15rem;
     margin-bottom: 10rem;
     width: 60%;
+    position: relative;
     -webkit-transition: all ease-in-out 0.3s;
     -moz-transition: all ease-in-out 0.3s;
     -ms-transition: all ease-in-out 0.3s;
     -o-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
+    z-index: 1;
 }
 
 #wrapper #mainContainer #projSlider {

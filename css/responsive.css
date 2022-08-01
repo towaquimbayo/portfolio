@@ -38,6 +38,133 @@
         font-size: 1rem;
         letter-spacing: 0.2rem;
     }
+    #wrapper #mainContainer #profileSummary {
+        padding: 12rem 3rem 10rem;
+    }
+    #wrapper #mainContainer #profileSummary h1 {
+        font-size: 4rem;
+        flex-wrap: wrap;
+    }
+    #wrapper #mainContainer #profileSummary h1 #nameHeadingAlt {
+        padding-left: 0;
+        text-align: left;
+        width: 100%;
+    }
+    #wrapper #mainContainer #profileSummary #profileDescription {
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    #wrapper #mainContainer #profileSummary #profileDescription h4 {
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    #wrapper #mainContainer #codingLaptopBg::before {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    #wrapper #mainContainer #codingLaptopBg img {
+        height: 50vh;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    #wrapper #mainContainer #profileImage {
+        padding-right: 3rem;
+        padding-left: 3rem;
+        width: 100%;
+        margin-top: -70%;
+    }
+    #wrapper #mainContainer #profileImage img {
+        width: 100%;
+    }
+    #wrapper #mainContainer #profileImage #resumeContainer {
+        width: 100%;
+    }
+    #wrapper #mainContainer #profileBackground {
+        margin: 0;
+        padding: 5rem 3rem 0;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer h2 {
+        font-size: 3rem;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    #wrapper #mainContainer #skills {
+        margin-top: 0;
+        padding: 7rem 0 5rem;
+    }
+    #wrapper #mainContainer #skills h1 {
+        font-size: 2.3rem;
+        padding: 0 3rem 1.5rem;
+    }
+    #wrapper #mainContainer #skills hr {
+        margin: 0 3rem;
+    }
+    #wrapper #mainContainer #skills #skillsList {
+        padding: 5rem 0;
+    }
+    #wrapper #mainContainer #skills #skillsList .skillContainer {
+        width: 50%;
+    }
+    #wrapper #mainContainer #skills #skillsList .skillContainer p {
+        font-size: 1.3rem;
+    }
+    #wrapper #mainContainer #techTools #scrollTechTools {
+        font-size: 10rem;
+    }
+    #wrapper #mainContainer #toolsGrid {
+        padding: 5rem 0;
+    }
+    #wrapper #mainContainer #toolsGrid .toolsGridBox {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 48%;
+        padding-bottom: 3rem;
+    }
+    #wrapper #mainContainer #toolsGrid .toolsGridBox img {
+        width: 100%;
+    }
+    #wrapper #mainContainer #toolsGrid .toolsGridBox h2 {
+        font-size: 1.3rem;
+        padding-top: 2rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    #wrapper #mainContainer #contactSec {
+        flex-direction: column;
+        padding: 0 3rem 10rem;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo img {
+        width: 70%;
+    }
+    #wrapper #mainContainer #contactSec #contactContent {
+        width: 100%;
+        padding-left: 0;
+    }
+    #wrapper #mainContainer #contactSec #contactContent p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer {
+        height: 12rem;
+        max-height: 12rem;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer h2 {
+        font-size: 4rem;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a .scrollContainer .redDot {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -69,6 +196,111 @@
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
     }
+    #wrapper #mainContainer #profileSummary {
+        padding: 15rem 3rem 10rem;
+    }
+    #wrapper #mainContainer #profileSummary h1 {
+        font-size: 6rem;
+        flex-wrap: wrap;
+    }
+    #wrapper #mainContainer #profileSummary h1 #nameHeadingAlt {
+        padding-left: 0;
+        text-align: right;
+        width: 100%;
+    }
+    #wrapper #mainContainer #profileSummary #profileDescription {
+        justify-content: center;
+    }
+    #wrapper #mainContainer #profileSummary #profileDescription h4 {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    #wrapper #mainContainer #codingLaptopBg img {
+        height: 50vh;
+    }
+    #wrapper #mainContainer #profileImage {
+        padding-right: 5rem;
+        padding-left: 5rem;
+        width: 100%;
+        margin-top: -35%;
+    }
+    #wrapper #mainContainer #profileImage img {
+        width: 100%;
+    }
+    #wrapper #mainContainer #profileImage #resumeContainer {
+        width: 100%;
+    }
+    #wrapper #mainContainer #profileBackground {
+        margin: 0;
+        padding: 7rem 3rem 0;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer h2 {
+        font-size: 3rem;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    #wrapper #mainContainer #skills {
+        margin-top: 0;
+        padding: 7rem 0 5rem;
+    }
+    #wrapper #mainContainer #skills h1 {
+        font-size: 3.5rem;
+        padding: 0 3rem 1.5rem;
+    }
+    #wrapper #mainContainer #skills hr {
+        margin: 0 3rem;
+    }
+    #wrapper #mainContainer #skills #skillsList .skillContainer {
+        width: 25%;
+    }
+    #wrapper #mainContainer #skills #skillsList .skillContainer p {
+        font-size: 1.3rem;
+    }
+    #wrapper #mainContainer #techTools #scrollTechTools {
+        font-size: 15rem;
+    }
+    #wrapper #mainContainer #toolsGrid {
+        padding: 7rem 3rem;
+    }
+    #wrapper #mainContainer #toolsGrid .toolsGridBox {
+        width: 48%;
+    }
+    #wrapper #mainContainer #toolsGrid .toolsGridBox h2 {
+        font-size: 1.5rem;
+    }
+    #wrapper #mainContainer #contactSec {
+        flex-direction: column;
+        padding: 0 3rem 10rem;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo img {
+        width: 25%;
+    }
+    #wrapper #mainContainer #contactSec #contactContent {
+        width: 100%;
+        padding-left: 0;
+    }
+    #wrapper #mainContainer #contactSec #contactContent p {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer {
+        height: 12rem;
+        max-height: 12rem;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer h2 {
+        font-size: 4rem;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a .scrollContainer .redDot {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -99,6 +331,102 @@
     #wrapper #mainContainer #homeHeading h4 {
         font-size: 1.3rem;
     }
+    #wrapper #mainContainer #profileSummary {
+        padding: 15rem 3rem 10rem;
+    }
+    #wrapper #mainContainer #profileSummary h1 {
+        font-size: 7rem;
+        flex-wrap: wrap;
+    }
+    #wrapper #mainContainer #profileSummary h1 #nameHeadingAlt {
+        padding-left: 0;
+        text-align: right;
+        width: 100%;
+    }
+    #wrapper #mainContainer #profileSummary #profileDescription {
+        justify-content: center;
+    }
+    #wrapper #mainContainer #profileSummary #profileDescription h4 {
+        width: 100%;
+    }
+    #wrapper #mainContainer #codingLaptopBg img {
+        height: 50vh;
+    }
+    #wrapper #mainContainer #profileImage {
+        padding-left: 3rem;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    #wrapper #mainContainer #profileImage img {
+        width: 45%;
+    }
+    #wrapper #mainContainer #profileImage #resumeContainer {
+        width: 55%;
+        align-self: center;
+        padding-top: 12rem;
+    }
+    #wrapper #mainContainer #profileBackground {
+        margin: 0;
+        padding: 10rem 3rem 0;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer h2 {
+        font-size: 3.3rem;
+    }
+    #wrapper #mainContainer #skills {
+        margin-top: 0;
+        padding: 10rem 0 5rem;
+    }
+    #wrapper #mainContainer #skills h1 {
+        padding: 0 3rem 1.5rem;
+    }
+    #wrapper #mainContainer #skills hr {
+        margin: 0 3rem;
+    }
+    #wrapper #mainContainer #skills #skillsList .skillContainer {
+        width: 25%;
+    }
+    #wrapper #mainContainer #skills #skillsList .skillContainer p {
+        font-size: 1.3rem;
+    }
+    #wrapper #mainContainer #techTools #scrollTechTools {
+        font-size: 15rem;
+    }
+    #wrapper #mainContainer #toolsGrid {
+        padding: 7rem 3rem;
+    }
+    #wrapper #mainContainer #toolsGrid .toolsGridBox {
+        width: 48%;
+    }
+    #wrapper #mainContainer #toolsGrid .toolsGridBox h2 {
+        font-size: 1.5rem;
+    }
+    #wrapper #mainContainer #contactSec {
+        flex-direction: column;
+        padding: 0 3rem 10rem;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo img {
+        width: 25%;
+    }
+    #wrapper #mainContainer #contactSec #contactContent {
+        width: 100%;
+        padding-left: 0;
+    }
+    #wrapper #mainContainer #contactSec #contactContent p {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer {
+        height: 12rem;
+        max-height: 12rem;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer h2 {
+        font-size: 5rem;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
@@ -126,6 +454,89 @@
     #wrapper #mainContainer #homeHeading h4 {
         font-size: 1.5rem;
     }
+    #wrapper #mainContainer #profileSummary {
+        padding: 12rem 5rem 10rem;
+    }
+    #wrapper #mainContainer #profileSummary h1 {
+        font-size: 9rem;
+        flex-wrap: wrap;
+    }
+    #wrapper #mainContainer #profileSummary h1 #nameHeadingAlt {
+        padding-left: 0;
+        text-align: right;
+        width: 100%;
+    }
+    #wrapper #mainContainer #profileSummary #profileDescription {
+        justify-content: center;
+    }
+    #wrapper #mainContainer #profileSummary #profileDescription h4 {
+        width: 100%;
+    }
+    #wrapper #mainContainer #codingLaptopBg img {
+        height: 60vh;
+    }
+    #wrapper #mainContainer #profileImage {
+        padding-left: 5rem;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    #wrapper #mainContainer #profileImage img {
+        width: 55%;
+    }
+    #wrapper #mainContainer #profileImage #resumeContainer {
+        width: 45%;
+        align-self: center;
+        padding-top: 15rem;
+    }
+    #wrapper #mainContainer #profileBackground {
+        margin: 0;
+        padding: 10rem 5rem 0;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer h2 {
+        font-size: 3.3rem;
+    }
+    #wrapper #mainContainer #skills {
+        margin-top: 0;
+        padding: 10rem 0 5rem;
+    }
+    #wrapper #mainContainer #skills h1 {
+        padding: 0 5rem 1.5rem;
+    }
+    #wrapper #mainContainer #skills hr {
+        margin: 0 5rem;
+    }
+    #wrapper #mainContainer #skills #skillsList .skillContainer {
+        width: 25%;
+    }
+    #wrapper #mainContainer #techTools #scrollTechTools {
+        font-size: 15rem;
+    }
+    #wrapper #mainContainer #toolsGrid {
+        padding: 7rem 5rem;
+    }
+    #wrapper #mainContainer #toolsGrid .toolsGridBox {
+        width: 48%;
+    }
+    #wrapper #mainContainer #contactSec {
+        flex-direction: column;
+        padding: 0 5rem 10rem;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo img {
+        width: 25%;
+    }
+    #wrapper #mainContainer #contactSec #contactContent {
+        width: 100%;
+        padding-left: 0;
+    }
+    #wrapper #mainContainer #contactSec #contactContent p {
+        font-size: 2.3rem;
+        line-height: 4rem;
+    }
 }
 
 @media (min-width: 1300px) and (max-width: 1799.98px) {
@@ -137,6 +548,22 @@
     }
     #wrapper #mainContainer #homeHeading h4 {
         font-size: 1.5rem;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer h2 {
+        font-size: 3.3rem;
+    }
+    #wrapper #mainContainer #skills {
+        margin-top: 0;
+    }
+    #wrapper #mainContainer #contactSec #contactLogo {
+        width: 25%;
+    }
+    #wrapper #mainContainer #contactSec #contactContent {
+        width: 75%;
+    }
+    #wrapper #mainContainer #contactSec #contactContent p {
+        font-size: 2.3rem;
+        line-height: 4rem;
     }
 }
 

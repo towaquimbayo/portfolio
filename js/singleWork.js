@@ -4,32 +4,68 @@ const nextProjSliderImg = document.querySelector('#nextProjSliderImg');
 const projSliderImgArray = ['dowco-thumb.png', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg'];
 var currCount = 0;
 
+var navLinksColor;
+setTimeout(() => {
+    navLinksColor = document.querySelectorAll('.navLink');
+}, 500);
+
 $(document).ready(function () {
     window.onscroll = function () {
-        if (window.pageYOffset >= 2000 && window.pageYOffset < 2600) {
+        console.log(window.pageYOffset)
+        if (window.pageYOffset >= 100 && window.pageYOffset < 1400) {
+            for (var i = 0; i < navLinksColor.length; i++) {
+                navLinksColor[i].classList.add('changeBg');
+            }
+            document.querySelector('#projGallerySec1').classList.remove('active');
+            document.querySelector('#projGallerySec2').classList.remove('active');
+            document.querySelector('#projGallerySec3').classList.remove('active');
+            document.querySelector('#projGallerySec4').classList.remove('active');
+            document.querySelector('#projGallerySec5').classList.remove('active');
+        } else if (window.pageYOffset >= 2000 && window.pageYOffset < 2600) {
+            for (var i = 0; i < navLinksColor.length; i++) {
+                navLinksColor[i].classList.remove('changeBg');
+            }
             document.querySelector('#projGallerySec1').classList.add('active');
             document.querySelector('#projGallerySec2').classList.remove('active');
             document.querySelector('#projGallerySec3').classList.remove('active');
             document.querySelector('#projGallerySec4').classList.remove('active');
             document.querySelector('#projGallerySec5').classList.remove('active');
         } else if (window.pageYOffset > 2900 && window.pageYOffset < 3800) {
+            for (var i = 0; i < navLinksColor.length; i++) {
+                navLinksColor[i].classList.remove('changeBg');
+            }
             document.querySelector('#projGallerySec1').classList.remove('active');
             document.querySelector('#projGallerySec2').classList.add('active');
             document.querySelector('#projGallerySec3').classList.remove('active');
             document.querySelector('#projGallerySec4').classList.remove('active');
             document.querySelector('#projGallerySec5').classList.remove('active');
         } else if (window.pageYOffset > 4000 && window.pageYOffset < 4600) {
+            for (var i = 0; i < navLinksColor.length; i++) {
+                navLinksColor[i].classList.remove('changeBg');
+            }
             document.querySelector('#projGallerySec1').classList.remove('active');
             document.querySelector('#projGallerySec2').classList.remove('active');
             document.querySelector('#projGallerySec3').classList.add('active');
             document.querySelector('#projGallerySec4').classList.remove('active');
             document.querySelector('#projGallerySec5').classList.remove('active');
-        } else if (window.pageYOffset > 4800 && window.pageYOffset < 5200) {
+        } else if (window.pageYOffset > 5200 && window.pageYOffset < 6300) {
+            for (var i = 0; i < navLinksColor.length; i++) {
+                navLinksColor[i].classList.remove('changeBg');
+            }
             document.querySelector('#projGallerySec1').classList.remove('active');
             document.querySelector('#projGallerySec2').classList.remove('active');
             document.querySelector('#projGallerySec3').classList.remove('active');
             document.querySelector('#projGallerySec4').classList.add('active');
             document.querySelector('#projGallerySec5').classList.add('active');
+        } else {
+            for (var i = 0; i < navLinksColor.length; i++) {
+                navLinksColor[i].classList.remove('changeBg');
+            }
+            document.querySelector('#projGallerySec1').classList.remove('active');
+            document.querySelector('#projGallerySec2').classList.remove('active');
+            document.querySelector('#projGallerySec3').classList.remove('active');
+            document.querySelector('#projGallerySec4').classList.remove('active');
+            document.querySelector('#projGallerySec5').classList.remove('active');
         }
     }
 

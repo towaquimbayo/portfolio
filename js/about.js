@@ -35,7 +35,7 @@ const infinite = new TimelineMax({
     repeat: -1,
     paused: true
 });
-const time = 30;
+var time = 30;
 
 // Tech Tools transformation on scroll
 const techTools = $('#scrollTechTools')
@@ -45,69 +45,52 @@ $(document).ready(function () {
     shuffleSkills();
 
     window.onscroll = function () {
-        if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
-            document.querySelector('#wrapper').classList.add('changeBg');
-            document.querySelector('#scrollTechTools').classList.add('changeBg');
-            for (var i = 0; i < techToolsText.length; i++) {
-                techToolsText[i].classList.add('changeBg');
+        if (window.screen.width >= 1300) {
+            techTools.css({
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3200) + "px)"
+            });
+            if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
+                changeBgColor();
+            } else {
+                removeBgColor();
             }
-            document.querySelector('#contactContent p').classList.add('changeBg');
-            for (var i = 0; i < letsWorkText.length; i++) {
-                letsWorkText[i].classList.add('changeBg');
+        } else if (window.screen.width < 1300 && window.screen.width >= 992) {
+            techTools.css({
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3800) + "px)"
+            });
+            if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
+                changeBgColor();
+            } else {
+                removeBgColor();
             }
-            for (var i = 0; i < scrollingTextContainer.length; i++) {
-                scrollingTextContainer[i].classList.add('changeBg');
+        } else if (window.screen.width < 992 && window.screen.width >= 768) {
+            techTools.css({
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3800) + "px)"
+            });
+            if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
+                changeBgColor();
+            } else {
+                removeBgColor();
             }
-            // Set time to let cloend content load first
-            setTimeout(() => {
-                document.querySelector('.cloned').classList.add('changeBg');
-            }, 300);
-            for (var i = 0; i < letsWorkTextCloned.length; i++) {
-                letsWorkTextCloned[i].classList.add('changeBg');
+        } else if (window.screen.width < 768 && window.screen.width >= 576) {
+            techTools.css({
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3800) + "px)"
+            });
+            if (window.pageYOffset > 4100 && window.pageYOffset < 5200) {
+                changeBgColor();
+            } else {
+                removeBgColor();
             }
-            for (var i = 0; i < navLinksColor.length; i++) {
-                navLinksColor[i].classList.add('changeBg');
-            }
-            for (var i = 0; i < socialIcons.length; i++) {
-                socialIcons[i].classList.add('changeBg');
-            }
-            for (var i = 0; i < socialIconsColor.length; i++) {
-                socialIconsColor[i].classList.add('changeBg');
-            }
-        } else {
-            document.querySelector('#wrapper').classList.remove('changeBg');
-            document.querySelector('#scrollTechTools').classList.remove('changeBg');
-            for (var i = 0; i < techToolsText.length; i++) {
-                techToolsText[i].classList.remove('changeBg');
-            }
-            document.querySelector('#contactContent p').classList.remove('changeBg');
-            for (var i = 0; i < letsWorkText.length; i++) {
-                letsWorkText[i].classList.remove('changeBg');
-            }
-            for (var i = 0; i < scrollingTextContainer.length; i++) {
-                scrollingTextContainer[i].classList.remove('changeBg');
-            }
-            // Set time to let cloend content load first
-            setTimeout(() => {
-                document.querySelector('.cloned').classList.remove('changeBg');
-            }, 300);
-            for (var i = 0; i < letsWorkTextCloned.length; i++) {
-                letsWorkTextCloned[i].classList.remove('changeBg');
-            }
-            for (var i = 0; i < navLinksColor.length; i++) {
-                navLinksColor[i].classList.remove('changeBg');
-            }
-            for (var i = 0; i < socialIcons.length; i++) {
-                socialIcons[i].classList.remove('changeBg');
-            }
-            for (var i = 0; i < socialIconsColor.length; i++) {
-                socialIconsColor[i].classList.remove('changeBg');
+        } else if (window.screen.width < 576) {
+            techTools.css({
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 4500) + "px)"
+            });
+            if (window.pageYOffset > 4500 && window.pageYOffset < 5700) {
+                changeBgColor();
+            } else {
+                removeBgColor();
             }
         }
-
-        techTools.css({
-            "transform": "translateX(-" + transform + ($(window).scrollTop() - 3500) + "px)"
-        });
     }
 });
 
@@ -159,3 +142,63 @@ letsWork.on("mouseenter", function () {
 }).on("mouseleave", function () {
     infinite.play();
 });
+
+function changeBgColor() {
+    document.querySelector('#wrapper').classList.add('changeBg');
+    document.querySelector('#scrollTechTools').classList.add('changeBg');
+    for (var i = 0; i < techToolsText.length; i++) {
+        techToolsText[i].classList.add('changeBg');
+    }
+    document.querySelector('#contactContent p').classList.add('changeBg');
+    for (var i = 0; i < letsWorkText.length; i++) {
+        letsWorkText[i].classList.add('changeBg');
+    }
+    for (var i = 0; i < scrollingTextContainer.length; i++) {
+        scrollingTextContainer[i].classList.add('changeBg');
+    }
+    setTimeout(() => {
+        document.querySelector('.cloned').classList.add('changeBg');
+    }, 300);
+    for (var i = 0; i < letsWorkTextCloned.length; i++) {
+        letsWorkTextCloned[i].classList.add('changeBg');
+    }
+    for (var i = 0; i < navLinksColor.length; i++) {
+        navLinksColor[i].classList.add('changeBg');
+    }
+    for (var i = 0; i < socialIcons.length; i++) {
+        socialIcons[i].classList.add('changeBg');
+    }
+    for (var i = 0; i < socialIconsColor.length; i++) {
+        socialIconsColor[i].classList.add('changeBg');
+    }
+}
+
+function removeBgColor() {
+    document.querySelector('#wrapper').classList.remove('changeBg');
+    document.querySelector('#scrollTechTools').classList.remove('changeBg');
+    for (var i = 0; i < techToolsText.length; i++) {
+        techToolsText[i].classList.remove('changeBg');
+    }
+    document.querySelector('#contactContent p').classList.remove('changeBg');
+    for (var i = 0; i < letsWorkText.length; i++) {
+        letsWorkText[i].classList.remove('changeBg');
+    }
+    for (var i = 0; i < scrollingTextContainer.length; i++) {
+        scrollingTextContainer[i].classList.remove('changeBg');
+    }
+    setTimeout(() => {
+        document.querySelector('.cloned').classList.remove('changeBg');
+    }, 300);
+    for (var i = 0; i < letsWorkTextCloned.length; i++) {
+        letsWorkTextCloned[i].classList.remove('changeBg');
+    }
+    for (var i = 0; i < navLinksColor.length; i++) {
+        navLinksColor[i].classList.remove('changeBg');
+    }
+    for (var i = 0; i < socialIcons.length; i++) {
+        socialIcons[i].classList.remove('changeBg');
+    }
+    for (var i = 0; i < socialIconsColor.length; i++) {
+        socialIconsColor[i].classList.remove('changeBg');
+    }
+}
