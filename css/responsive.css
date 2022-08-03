@@ -186,6 +186,111 @@
         font-size: 0.8rem;
         line-height: 1.5rem;
     }
+    #wrapper #mainContainer #projDesc {
+        padding: 7rem 2rem;
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+    }
+    #wrapper #mainContainer #projDesc h1 {
+        font-size: 4rem;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 #viewProjBtn {
+        display: none;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 #viewProjMobBtn {
+        display: inline;
+        margin: 0 auto;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer #projRolesContainer .projRoles {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer #projRolesContainer .projRoles p {
+        font-size: 1rem;
+    }
+    #wrapper #mainContainer #projGallery {
+        padding: 10rem 2rem 10rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec1 img, 
+    #wrapper #mainContainer #projGallery #projGallerySec2 img, 
+    #wrapper #mainContainer #projGallery #projGallerySec3 img, 
+    #wrapper #mainContainer #projGallery #projGallerySec4 img, 
+    #wrapper #mainContainer #projGallery #projGallerySec5 img, 
+    #wrapper #mainContainer #projGallery #projGallerySec6 img {
+        border-radius: 1.5rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec1 {
+        margin: 0 0 10rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec2 {
+        margin-bottom: 10rem;
+        width: 100%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3 {
+        margin-bottom: 10rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3 img {
+        width: 100%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec4 {
+        margin-bottom: 10rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec4 img {
+        width: 100%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec5 {
+        margin-top: 0;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    #wrapper #mainContainer #projSlider {
+        padding-bottom: 12rem;
+    }
+    #wrapper #mainContainer #projSlider #projImgContainer {
+        height: 35vh;
+    }
+    #wrapper #mainContainer #projSlider #projImgContainer #currProjImg {
+        width: 100%;
+    }
+    #wrapper #mainContainer #projSlider #projImgContainer #nextProjImg {
+        display: none;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation {
+        flex-wrap: wrap;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation {
+        width: 100%;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation .projNavCol-6 {
+        padding: 1.5rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation .projNavCol-6 i {
+        font-size: 2rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer {
+        width: 100%;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle {
+        padding: 3rem 1.5rem 3rem 2rem;
+        width: 80%;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle #projSliderTitle {
+        font-size: 2.5rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn {
+        width: 20%;
+        border: 1px solid white;
+        margin-right: 2rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn #projSliderLink {
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -338,6 +443,92 @@
     #wrapper #mainContainer #workGallery .project a .projectContent h2 {
         font-size: 4rem;
     }
+    #wrapper #mainContainer #projDesc {
+        padding: 10rem 3rem;
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+    }
+    #wrapper #mainContainer #projDesc h1 {
+        font-size: 5.5rem;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 #viewProjBtn {
+        display: none;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 #viewProjMobBtn {
+        display: inline;
+        margin: 0 auto;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer #projRolesContainer .projRoles p {
+        font-size: 1rem;
+    }
+    #wrapper #mainContainer #projGallery {
+        padding: 10rem 3rem 10rem;
+    }
+    #wrapper #mainContainer #projGallery .active {
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec1 {
+        margin: 0 3rem 10rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec2 {
+        margin-bottom: 10rem;
+        width: 80%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3 {
+        margin-bottom: 10rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3 img {
+        width: 80%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3.active {
+        margin-right: 1rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec4 img {
+        width: 70%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec4.active {
+        margin-right: 1rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec5 {
+        margin-top: -7rem;
+        width: 70%;
+        margin-bottom: 0;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec5.active {
+        margin-top: 0;
+    }
+    #wrapper #mainContainer #projSlider {
+        padding-bottom: 12rem;
+    }
+    #wrapper #mainContainer #projSlider #projImgContainer {
+        height: 35vh;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle {
+        padding: 2rem 1.5rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle #projSliderTitle {
+        font-size: 2.5rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn {
+        width: 20%;
+        border: 1px solid white;
+        margin-right: 1rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn #projSliderLink {
+        font-size: 0.8rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation .projNavCol-6 {
+        padding: 2rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -480,6 +671,78 @@
     #wrapper #mainContainer #workGallery .project a .projectContent h2 {
         font-size: 4rem;
     }
+    #wrapper #mainContainer #projDesc {
+        padding: 10rem 3rem;
+    }
+    #wrapper #mainContainer #projDesc h1 {
+        font-size: 7rem;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 {
+        width: 100%;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 #viewProjBtn {
+        display: none;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 #viewProjMobBtn {
+        display: inline;
+    }
+    #wrapper #mainContainer #projGallery {
+        padding: 10rem 3rem 10rem;
+    }
+    #wrapper #mainContainer #projGallery .active {
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec1 {
+        margin: 0 3rem 10rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec2 {
+        margin-bottom: 10rem;
+        width: 80%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3 {
+        margin-bottom: 10rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3 img {
+        width: 80%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3.active {
+        margin-right: 2.5rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec4 img {
+        width: 70%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec4.active {
+        margin-right: 2.5rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec5 {
+        margin-top: -7rem;
+        width: 70%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec5.active {
+        margin-top: 0;
+    }
+    #wrapper #mainContainer #projSlider {
+        padding-bottom: 15rem;
+    }
+    #wrapper #mainContainer #projSlider #projImgContainer {
+        height: 45vh;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle {
+        padding: 3rem 1.5rem 3rem 3rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle #projSliderTitle {
+        font-size: 3rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn {
+        width: 20%;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn #projSliderLink {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
@@ -599,6 +862,63 @@
     #wrapper #mainContainer #workGallery .project a .projectContent h2 {
         font-size: 3.5rem;
     }
+    #wrapper #mainContainer #projDesc {
+        padding: 10rem 5rem;
+    }
+    #wrapper #mainContainer #projDesc h1 {
+        font-size: 7rem;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer #projRolesContainer .projRoles p {
+        font-size: 1.1rem;
+    }
+    #wrapper #mainContainer #projGallery {
+        padding: 20rem 5rem 10rem;
+    }
+    #wrapper #mainContainer #projGallery .active {
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec1 {
+        margin: 0 5rem 15rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec2 {
+        margin-bottom: 15rem;
+        width: 70%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3 {
+        margin-bottom: 15rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3.active {
+        margin-right: 2rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec4.active {
+        margin-right: 2rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec5 {
+        margin-top: -7rem;
+        width: 70%;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec5.active {
+        margin-top: 0;
+    }
+    #wrapper #mainContainer #projSlider {
+        padding-bottom: 15rem;
+    }
+    #wrapper #mainContainer #projSlider #projImgContainer {
+        height: 45vh;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle {
+        padding: 3rem 1.5rem 3rem 5rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle #projSliderTitle {
+        font-size: 4rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn #projSliderLink {
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 1300px) and (max-width: 1799.98px) {
@@ -629,6 +949,25 @@
     }
     #wrapper #mainContainer #workGallery .project a .projectContent h2 {
         font-size: 4rem;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer #projRolesContainer .projRoles p {
+        font-size: 1.1rem;
+    }
+    #wrapper #mainContainer #projGallery .active {
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec1 {
+        margin: 0 8rem 15rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec2 {
+        margin-bottom: 15rem;
+    }
+    #wrapper #mainContainer #projGallery #projGallerySec3 {
+        margin-bottom: 15rem;
     }
 }
 
