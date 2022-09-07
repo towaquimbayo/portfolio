@@ -250,7 +250,6 @@
     -o-text-stroke: 1px;
     color: white;
     white-space: nowrap;
-    cursor: pointer;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -353,7 +352,6 @@
     left: 0;
     width: 100%;
     overflow: hidden;
-    cursor: pointer;
 }
 
 #wrapper #mainContainer #letsWork .scrollingText {

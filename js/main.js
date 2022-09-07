@@ -42,7 +42,6 @@ $(document).ready(function () {
             wrapper.style.backgroundColor = null;
         }
     }, false);
-    
 });
 
 /**
@@ -68,3 +67,46 @@ function openElement() {
         $('.mailIcon').toggleClass('enter');
     }, 200);
 }
+
+/**
+ * Custom mouse cursor movement.
+ */
+const cursorContainer = document.querySelector('#cursors');
+const cursorPointers = document.querySelectorAll('#cursors div');
+const cursorText = cursorContainer.querySelector('div span');
+const imgHoverTag = document.querySelectorAll('img[data-hover]');
+let aimX = 0;
+let aimY = 0;
+
+cursorPointers.forEach((cursorPointer, i) => {
+    let currX = 0;
+    let currY = 0;
+    let speed = 0.2 - i * 0.01;
+
+    const animate = function() {
+        currX += (aimX - currX) * speed;
+        currY += (aimY - currY) * speed;
+    
+        cursorPointer.style.left = currX + 'px';
+        cursorPointer.style.top = currY + 'px';
+    
+        requestAnimationFrame(animate);
+    }
+    animate();
+})
+
+document.addEventListener('mousemove', function(e) {
+    aimX = e.pageX;
+    aimY = e.pageY;
+});
+
+imgHoverTag.forEach(img => {
+    img.addEventListener('mouseover', function() {
+        cursorText.classList.add('hover');
+        cursorText.innerHTML = img.getAttribute('data-hover');
+    })
+    
+    img.addEventListener('mouseout', function() {
+        cursorText.classList.remove('hover');
+    })
+})

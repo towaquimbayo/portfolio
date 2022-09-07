@@ -11,6 +11,7 @@
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
+    cursor: none;
 }
 
 /* Fonts - Kepler Std */
@@ -540,7 +541,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0.85);
 }
 
-/* Logo + Navbar */
+/* Logo */
 #wrapper #mainContainer #navTemp #logoNav {
     width: 100%;
     position: fixed;
@@ -558,6 +559,7 @@ body::-webkit-scrollbar-thumb {
     width: 70px;
 }
 
+/* Navbar Links */
 #wrapper #mainContainer #navTemp #navbar {
     width: 100%;
     position: fixed;
@@ -643,6 +645,7 @@ body::-webkit-scrollbar-thumb {
     transform: scaleX(1);
 }
 
+/* Floating Socials Icon Box */
 #wrapper #mainContainer #floatingSocials {
     display: flex;
     flex-direction: row;
@@ -791,4 +794,64 @@ body::-webkit-scrollbar-thumb {
 
 #wrapper #mainContainer a .contactIcon i.changeBg {
     color: white;
+}
+
+/* Custom Mouse Cusor */
+#wrapper #mainContainer #cursors div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--primaryColor);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+/* #wrapper #mainContainer #cursors div:last-child:before {
+    content: 'View';
+    content: attr(data-hover);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+} */
+
+#wrapper #mainContainer #cursors div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: black;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    z-index: 10001;
+}
+
+#wrapper #mainContainer #cursors div span.hover {
+    opacity: 1;
 }
