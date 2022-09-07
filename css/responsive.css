@@ -671,6 +671,13 @@
     #wrapper #mainContainer #workGallery .project a .projectContent h2 {
         font-size: 4rem;
     }
+    #wrapper #mainContainer #dowcoBanner,
+    #wrapper #mainContainer #pontusBanner,
+    #wrapper #mainContainer #mymindBanner,
+    #wrapper #mainContainer #rtohomesBanner,
+    #wrapper #mainContainer #tudorconsultingBanner {
+        background-attachment: scroll;
+    }
     #wrapper #mainContainer #projDesc {
         padding: 10rem 3rem;
     }
