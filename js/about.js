@@ -47,7 +47,7 @@ $(document).ready(function () {
     window.onscroll = function () {
         if (window.screen.width >= 1300) {
             techTools.css({
-                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3200) + "px)"
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3500) + "px)"
             });
             if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
                 changeBgColor();
@@ -65,7 +65,7 @@ $(document).ready(function () {
             }
         } else if (window.screen.width < 992 && window.screen.width >= 768) {
             techTools.css({
-                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3800) + "px)"
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3500) + "px)"
             });
             if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
                 changeBgColor();
@@ -83,7 +83,7 @@ $(document).ready(function () {
             }
         } else if (window.screen.width < 576) {
             techTools.css({
-                "transform": "translateX(-" + transform + ($(window).scrollTop() - 4500) + "px)"
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 4600) + "px)"
             });
             if (window.pageYOffset > 4500 && window.pageYOffset < 5700) {
                 changeBgColor();

@@ -28,6 +28,9 @@
         right: 2.5rem;
         bottom: 2.5rem;
     }
+    #wrapper #mainContainer #cursors {
+        display: none;
+    }
     #wrapper #mainContainer #homeHeading {
         padding: 1rem;
     }
@@ -312,6 +315,9 @@
         right: 2.5rem;
         bottom: 3rem;
     }
+    #wrapper #mainContainer #cursors {
+        display: none;
+    }
     #wrapper #mainContainer #homeHeading {
         padding: 3rem;
     }
@@ -549,6 +555,9 @@
     #wrapper #mainContainer a .mailIcon {
         right: 2.5rem;
         bottom: 3rem;
+    }
+    #wrapper #mainContainer #cursors {
+        display: none;
     }
     #wrapper #mainContainer #homeHeading {
         padding: 3rem;
