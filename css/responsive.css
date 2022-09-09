@@ -4,10 +4,10 @@
 }
 
 @media (max-width: 575.98px) {
-    #wrapper #mainContainer #navTemp #logoNav #logoContainer {
+    #wrapper #mainContainer #logoNav #logoContainer {
         padding: 2rem 2rem 0;
     }
-    #wrapper #mainContainer #navTemp #navbar {
+    #wrapper #mainContainer #navbar {
         display: none;
     }
     #wrapper #mobHamburger {
@@ -297,10 +297,10 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #wrapper #mainContainer #navTemp #logoNav #logoContainer {
+    #wrapper #mainContainer #logoNav #logoContainer {
         padding: 2rem 3rem 0;
     }
-    #wrapper #mainContainer #navTemp #navbar {
+    #wrapper #mainContainer #navbar {
         display: none;
     }
     #wrapper #mobHamburger {
@@ -538,10 +538,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    #wrapper #mainContainer #navTemp #logoNav #logoContainer {
+    #wrapper #mainContainer #logoNav #logoContainer {
         padding: 3rem 3rem 0;
     }
-    #wrapper #mainContainer #navTemp #navbar {
+    #wrapper #mainContainer #navbar {
         display: none;
     }
     #wrapper #mobHamburger {
@@ -762,10 +762,10 @@
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
-    #wrapper #mainContainer #navTemp #logoNav #logoContainer {
+    #wrapper #mainContainer #logoNav #logoContainer {
         padding: 3rem 5rem 0;
     }
-    #wrapper #mainContainer #navTemp #navbar {
+    #wrapper #mainContainer #navbar {
         padding: 0 20%;
     }
     #wrapper #mainContainer #floatingSocials {

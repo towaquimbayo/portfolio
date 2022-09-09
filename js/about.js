@@ -4,10 +4,7 @@ const letsWorkText = document.querySelectorAll('.scrollContainer h2');
 const scrollingTextContainer = document.querySelectorAll('.scrollingText');
 
 // Set time to let content load first
-var navLinksColor;
-setTimeout(() => {
-    navLinksColor = document.querySelectorAll('.navLink');
-}, 500);
+var navLinksColor = document.querySelectorAll('.navLink');
 
 var socialIcons;
 setTimeout(() => {
@@ -202,3 +199,31 @@ function removeBgColor() {
         socialIconsColor[i].classList.remove('changeBg');
     }
 }
+
+// Change profile img on click
+const profImg = document.querySelector('#profileImage img');
+$(profImg).click(function () {
+    if (profImg.classList.contains('prof1')) {
+        $(this).animate({
+            opacity: 0
+        }, 500, function () {
+            profImg.classList.remove('prof1');
+            profImg.classList.add('prof2');
+            profImg.src = '../img/towa2.jpg';
+        });
+        $(this).animate({
+            opacity: 1
+        }, 500);
+    } else {
+        $(this).animate({
+            opacity: 0
+        }, 500, function () {
+            profImg.classList.remove('prof2');
+            profImg.classList.add('prof1');
+            profImg.src = '../img/towa.jpg';
+        });
+        $(this).animate({
+            opacity: 1
+        }, 500);
+    }
+})

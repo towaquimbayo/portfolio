@@ -44,15 +44,28 @@
         <div id="mobHamburger"></div>
         <ul id="mobNavLinks">
             <li><a class="navLink" href="/">Home.</a></li>
-            <li><a class="navLink" href="/about/">About.</a></li>
+            <li><a class="navLink active" href="/about/">About.</a></li>
             <li><a class="navLink" href="/work/">Work.</a></li>
             <li><a class="navLink" href="mailto:towacurtis@hotmail.com">Contact.</a></li>
         </ul>
 
         <!-- Content -->
         <div id="mainContainer">
-            <!-- Nav Template -->
-            <div id="navTemp"></div>
+            <!-- Logo Navbar -->
+            <div id="logoNav">
+                <div id="logoContainer">
+                    <a href="/">
+                        <img src="../img/tq-favicon-primary.svg" alt="Portfolio Logo" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <div id="navbar">
+                <a class="navLink active" href="/about/">About</a>
+                <a class="navLink" href="/">Welcome</a>
+                <a class="navLink" href="/work/">Work</a>
+            </div>
 
             <!-- Floating Socials Contact Action Button -->
             <div id="floatingSocials">
@@ -76,9 +89,6 @@
 
             <!-- Custom Mouse Cursor -->
             <div id="cursors">
-                <div>
-                    <span></span>
-                </div>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -88,6 +98,7 @@
                 <div></div>
                 <div></div>
                 <div></div>
+                <div data-hover=""></div>
             </div>
 
             <div id="profileSummary">
@@ -103,7 +114,7 @@
             </div>
 
             <div id="profileImage">
-                <img src="../img/towa.jpg" alt="Towa's Profile Photo" />
+                <img src="../img/towa.jpg" class="prof1" alt="Towa's Profile Photo" data-hover="New Pose" />
                 <div id="resumeContainer">
                     <a href="../img/Resume.pdf" target="_blank">View Resume<i class="bi bi-download"></i></a>
                 </div>
@@ -239,7 +250,7 @@
                 </div>
             </div>
 
-            <div id="letsWork">
+            <div id="letsWork" data-hover="Email Me!">
                 <ul class="scrollingText">
                     <a href="mailto:towacurtis@hotmail.com">
                         <li class="letsWorkText">

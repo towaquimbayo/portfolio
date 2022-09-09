@@ -3,14 +3,9 @@
  */
 const mainFloatSocials = $('#floatingSocials');
 const wrapper = document.getElementById('wrapper');
-var navLinks;
-setTimeout(() => {
-    navLinks = document.querySelectorAll('.navLink');
-}, 300);
+var navLinks = document.querySelectorAll('.navLink');
 
 $(document).ready(function () {
-    loadNav();
-
     mainFloatSocials.addClass('enter');
     mainFloatSocials.click(openElement);
     mainFloatSocials.click(function () {
@@ -45,17 +40,6 @@ $(document).ready(function () {
 });
 
 /**
- * Load the Navbar.
- */
-function loadNav() {
-    $('#navTemp').load('../temp/nav.html', function () {
-        $('.navLink').each(function () {
-            $(this).toggleClass('active', this.getAttribute('href') === location.pathname);
-        });
-    });
-}
-
-/**
  * Toggle floating socials contact action button.
  */
 function openElement() {
@@ -74,7 +58,7 @@ function openElement() {
 const cursorContainer = document.querySelector('#cursors');
 const cursorPointers = document.querySelectorAll('#cursors div');
 const cursorText = cursorContainer.querySelector('div span');
-const imgHoverTag = document.querySelectorAll('img[data-hover]');
+const hoverTag = document.querySelectorAll('[data-hover]');
 let aimX = 0;
 let aimY = 0;
 
@@ -100,13 +84,19 @@ document.addEventListener('mousemove', function(e) {
     aimY = e.pageY;
 });
 
-imgHoverTag.forEach(img => {
+// Add Text on hover for cursor
+hoverTag.forEach(img => {
     img.addEventListener('mouseover', function() {
-        cursorText.classList.add('hover');
-        cursorText.innerHTML = img.getAttribute('data-hover');
+        cursorPointers.forEach(cursor => {
+            cursor.classList.add('hover');
+        });
+        cursorPointers[cursorPointers.length- 1].setAttribute('data-hover', img.getAttribute('data-hover'));
     })
     
     img.addEventListener('mouseout', function() {
-        cursorText.classList.remove('hover');
+        cursorPointers.forEach(cursor => {
+            cursor.classList.remove('hover');
+        });
+        cursorPointers[cursorPointers.length- 1].setAttribute('data-hover', '');
     })
 })

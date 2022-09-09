@@ -45,14 +45,27 @@
         <ul id="mobNavLinks">
             <li><a class="navLink" href="/">Home.</a></li>
             <li><a class="navLink" href="/about/">About.</a></li>
-            <li><a class="navLink" href="/work/">Work.</a></li>
+            <li><a class="navLink active" href="/work/">Work.</a></li>
             <li><a class="navLink" href="mailto:towacurtis@hotmail.com">Contact.</a></li>
         </ul>
 
         <!-- Content -->
         <div id="mainContainer">
-            <!-- Nav Template -->
-            <div id="navTemp"></div>
+            <!-- Logo Navbar -->
+            <div id="logoNav">
+                <div id="logoContainer">
+                    <a href="/">
+                        <img src="../img/tq-favicon-primary.svg" alt="Portfolio Logo" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <div id="navbar">
+                <a class="navLink" href="/about/">About</a>
+                <a class="navLink" href="/">Welcome</a>
+                <a class="navLink active" href="/work/">Work</a>
+            </div>
 
             <!-- Floating Socials Contact Action Button -->
             <div id="floatingSocials">
@@ -76,9 +89,6 @@
 
             <!-- Custom Mouse Cursor -->
             <div id="cursors">
-                <div>
-                    <span></span>
-                </div>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -88,11 +98,12 @@
                 <div></div>
                 <div></div>
                 <div></div>
+                <div data-hover=""></div>
             </div>
 
             <div id="workGallery">
                 <!-- Dowco -->
-                <div class="project" id="dowco">
+                <div class="project" id="dowco" data-hover="View">
                     <a href="/dowco/">
                         <div class="projectContent">
                             <h2>Dowco</h2>
@@ -103,7 +114,7 @@
                 </div>
 
                 <!-- Pontus -->
-                <div class="project" id="pontus">
+                <div class="project" id="pontus" data-hover="View">
                     <a href="/pontus/">
                         <div class="projectContent">
                             <h2>Pontus</h2>
@@ -114,7 +125,7 @@
                 </div>
 
                 <!-- MyMind -->
-                <div class="project" id="mymind">
+                <div class="project" id="mymind" data-hover="View">
                     <a href="/mymind/">
                         <div class="projectContent">
                             <h2>MyMind</h2>
@@ -125,7 +136,7 @@
                 </div>
 
                 <!-- RTO Homes -->
-                <div class="project" id="rtohomes">
+                <div class="project" id="rtohomes" data-hover="View">
                     <a href="/rtohomes/">
                         <div class="projectContent">
                             <h2>RTO Homes</h2>
@@ -136,7 +147,7 @@
                 </div>
 
                 <!-- Tudor Consulting -->
-                <div class="project" id="tudorconsulting">
+                <div class="project" id="tudorconsulting" data-hover="View">
                     <a href="/tudorconsulting/">
                         <div class="projectContent">
                             <h2>Tudor Consulting</h2>
