@@ -6,6 +6,8 @@ const wrapper = document.getElementById('wrapper');
 var navLinks = document.querySelectorAll('.navLink');
 
 $(document).ready(function () {
+    AOS.init();
+    
     mainFloatSocials.addClass('enter');
     mainFloatSocials.click(openElement);
     mainFloatSocials.click(function () {

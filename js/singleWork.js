@@ -1,7 +1,7 @@
 // Constant variables
 const currProjSliderImg = document.querySelector('#currProjSliderImg');
 const nextProjSliderImg = document.querySelector('#nextProjSliderImg');
-const projSliderImgArray = ['dowco-thumb.png', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg'];
+const projSliderImgArray = ['dowco-thumb.jpg', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg'];
 var currCount = 0;
 
 var navLinksColor;
