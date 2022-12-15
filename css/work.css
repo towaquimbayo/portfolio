@@ -81,6 +81,14 @@
     background-size: cover;
 }
 
+/* Capture The Flag */
+#wrapper #mainContainer #workGallery #capturetheflag {
+    background: url('../img/capture-the-flag-thumb.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #wrapper #mainContainer #workGallery .project a {
     display: flex;
     flex-direction: column;

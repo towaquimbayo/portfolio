@@ -39,6 +39,10 @@ const techTools = $('#scrollTechTools')
 const transform = parseInt(techTools.css('transform').split(',')[5]);
 
 $(document).ready(function () {
+    if (window.screen.width < 1300) {
+        $(".hideSkill").addClass("hide");
+    }
+
     shuffleSkills();
 
     window.onscroll = function () {
@@ -46,25 +50,25 @@ $(document).ready(function () {
             techTools.css({
                 "transform": "translateX(-" + transform + ($(window).scrollTop() - 3500) + "px)"
             });
-            if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
+            if (window.pageYOffset > 3700 && window.pageYOffset < 4800) {
                 changeBgColor();
             } else {
                 removeBgColor();
             }
         } else if (window.screen.width < 1300 && window.screen.width >= 992) {
             techTools.css({
-                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3800) + "px)"
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3900) + "px)"
             });
-            if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
+            if (window.pageYOffset > 4200 && window.pageYOffset < 5500) {
                 changeBgColor();
             } else {
                 removeBgColor();
             }
         } else if (window.screen.width < 992 && window.screen.width >= 768) {
             techTools.css({
-                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3500) + "px)"
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 3700) + "px)"
             });
-            if (window.pageYOffset > 3700 && window.pageYOffset < 4700) {
+            if (window.pageYOffset > 4100 && window.pageYOffset < 5400) {
                 changeBgColor();
             } else {
                 removeBgColor();
@@ -73,16 +77,16 @@ $(document).ready(function () {
             techTools.css({
                 "transform": "translateX(-" + transform + ($(window).scrollTop() - 3800) + "px)"
             });
-            if (window.pageYOffset > 4100 && window.pageYOffset < 5200) {
+            if (window.pageYOffset > 4500 && window.pageYOffset < 5600) {
                 changeBgColor();
             } else {
                 removeBgColor();
             }
         } else if (window.screen.width < 576) {
             techTools.css({
-                "transform": "translateX(-" + transform + ($(window).scrollTop() - 4600) + "px)"
+                "transform": "translateX(-" + transform + ($(window).scrollTop() - 5000) + "px)"
             });
-            if (window.pageYOffset > 4500 && window.pageYOffset < 5700) {
+            if (window.pageYOffset > 5200 && window.pageYOffset < 6500) {
                 changeBgColor();
             } else {
                 removeBgColor();

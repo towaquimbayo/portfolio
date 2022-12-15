@@ -221,6 +221,10 @@
     border: 1px solid var(--primaryColor);
 }
 
+#wrapper #mainContainer #skills #skillsList .skillContainer.hide {
+    display: none;
+}
+
 #wrapper #mainContainer #skills #skillsList .skillContainer p {
     font-size: 1.5rem;
     font-weight: 400;

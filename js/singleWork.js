@@ -1,7 +1,7 @@
 // Constant variables
 const currProjSliderImg = document.querySelector('#currProjSliderImg');
 const nextProjSliderImg = document.querySelector('#nextProjSliderImg');
-const projSliderImgArray = ['dowco-thumb.jpg', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg'];
+const projSliderImgArray = ['dowco-thumb.jpg', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'capture-the-flag-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg'];
 var currCount = 0;
 
 var navLinksColor;
@@ -169,9 +169,12 @@ function setProjSliderImg() {
         document.getElementById('projSliderTitle').innerHTML = 'MyMind';
         document.getElementById('projSliderLink').setAttribute('href', '/mymind/');
     } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[3]) {
+        document.getElementById('projSliderTitle').innerHTML = 'Capture The Flag';
+        document.getElementById('projSliderLink').setAttribute('href', '/capture-the-flag/');
+    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[4]) {
         document.getElementById('projSliderTitle').innerHTML = 'RTO Homes';
         document.getElementById('projSliderLink').setAttribute('href', '/rtohomes/');
-    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[4]) {
+    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[5]) {
         document.getElementById('projSliderTitle').innerHTML = 'Tudor Consulting';
         document.getElementById('projSliderLink').setAttribute('href', '/tudorconsulting/');
     }

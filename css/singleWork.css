@@ -48,6 +48,14 @@
     background-attachment: fixed;
 }
 
+#wrapper #mainContainer #capturetheflagBanner {
+    background: url('../img/capture-the-flag-thumb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #wrapper #mainContainer #projDesc {
     display: flex;
     flex-direction: row;
