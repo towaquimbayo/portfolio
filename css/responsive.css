@@ -193,7 +193,8 @@
     #wrapper #mainContainer #pontusBanner,
     #wrapper #mainContainer #mymindBanner,
     #wrapper #mainContainer #rtohomesBanner,
-    #wrapper #mainContainer #tudorconsultingBanner {
+    #wrapper #mainContainer #tudorconsultingBanner,
+    #wrapper #mainContainer #capturetheflagBanner {
         background-attachment: scroll;
     }
     #wrapper #mainContainer #projDesc {
@@ -460,7 +461,8 @@
     #wrapper #mainContainer #pontusBanner,
     #wrapper #mainContainer #mymindBanner,
     #wrapper #mainContainer #rtohomesBanner,
-    #wrapper #mainContainer #tudorconsultingBanner {
+    #wrapper #mainContainer #tudorconsultingBanner,
+    #wrapper #mainContainer #capturetheflagBanner {
         background-attachment: scroll;
     }
     #wrapper #mainContainer #projDesc {
@@ -698,7 +700,8 @@
     #wrapper #mainContainer #pontusBanner,
     #wrapper #mainContainer #mymindBanner,
     #wrapper #mainContainer #rtohomesBanner,
-    #wrapper #mainContainer #tudorconsultingBanner {
+    #wrapper #mainContainer #tudorconsultingBanner,
+    #wrapper #mainContainer #capturetheflagBanner {
         background-attachment: scroll;
     }
     #wrapper #mainContainer #projDesc {
