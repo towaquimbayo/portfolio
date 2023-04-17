@@ -147,203 +147,93 @@
     font-weight: 600;
 }
 
-/* Fonts - TT Norms Pro */
+/* Fonts - Rubik */
 @font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Thin.eot');
-    src: url('../fonts/TT-Norms-Pro-Thin.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Thin.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Thin.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Thin.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Thin-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-Thin-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Thin-Italic.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Thin-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Thin-Italic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-ExtraLight.eot');
-    src: url('../fonts/TT-Norms-Pro-ExtraLight.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-ExtraLight.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-ExtraLight.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-ExtraLight.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-ExtraLight-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-ExtraLight-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-ExtraLight-Italic.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-ExtraLight-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-ExtraLight-Italic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Light.eot');
-    src: url('../fonts/TT-Norms-Pro-Light.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Light.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Light.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Light.ttf') format('truetype');
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-Light.eot');
+    src: url('../fonts/Rubik-Light.otf') format('opentype'),
+        url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff'),
+        url('../fonts/Rubik-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Light-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-Light-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Light.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Light-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Light-Italic.ttf') format('truetype');
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-LightItalic.eot');
+    src: url('../fonts/Rubik-LightItalic.otf') format('opentype'),
+        url('../fonts/Rubik-LightItalic.woff2') format('woff2'),
+        url('../fonts/Rubik-LightItalic.woff') format('woff'),
+        url('../fonts/Rubik-LightItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Regular.eot');
-    src: url('../fonts/TT-Norms-Pro-Regular.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Regular.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Regular.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Regular.ttf') format('truetype');
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-Regular.eot');
+    src: url('../fonts/Rubik-Regular.otf') format('opentype'),
+        url('../fonts/Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/Rubik-Regular.woff') format('woff'),
+        url('../fonts/Rubik-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Italic.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Italic.ttf') format('truetype');
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-Italic.eot');
+    src: url('../fonts/Rubik-Italic.otf') format('opentype'),
+        url('../fonts/Rubik-Italic.woff2') format('woff2'),
+        url('../fonts/Rubik-Italic.woff') format('woff'),
+        url('../fonts/Rubik-Italic.ttf') format('truetype');
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Medium.eot');
-    src: url('../fonts/TT-Norms-Pro-Medium.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Medium.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Medium.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Medium.ttf') format('truetype');
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-Medium.eot');
+    src: url('../fonts/Rubik-Medium.otf') format('opentype'),
+        url('../fonts/Rubik-Medium.woff2') format('woff2'),
+        url('../fonts/Rubik-Medium.woff') format('woff'),
+        url('../fonts/Rubik-Medium.ttf') format('truetype');
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Medium-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-Medium-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Medium-Italic.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Medium-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Medium-Italic.ttf') format('truetype');
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-MediumItalic.eot');
+    src: url('../fonts/Rubik-MediumItalic.otf') format('opentype'),
+        url('../fonts/Rubik-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Rubik-MediumItalic.woff') format('woff'),
+        url('../fonts/Rubik-MediumItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Bold.eot');
-    src: url('../fonts/TT-Norms-Pro-Bold.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Bold.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Bold.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Bold.ttf') format('truetype');
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-SemiBold.eot');
+    src: url('../fonts/Rubik-SemiBold.otf') format('opentype'),
+        url('../fonts/Rubik-SemiBold.woff2') format('woff2'),
+        url('../fonts/Rubik-SemiBold.woff') format('woff'),
+        url('../fonts/Rubik-SemiBold.ttf') format('truetype');
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Bold-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-Bold-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Bold-Italic.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Bold-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Bold-Italic.ttf') format('truetype');
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-SemiBoldItalic.eot');
+    src: url('../fonts/Rubik-SemiBoldItalic.otf') format('opentype'),
+        url('../fonts/Rubik-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Rubik-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/Rubik-SemiBoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 600;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-ExtraBold.eot');
-    src: url('../fonts/TT-Norms-Pro-ExtraBold.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-ExtraBold.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-ExtraBold.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-ExtraBold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-ExtraBold-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-ExtraBold-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-ExtraBold-Italic.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-ExtraBold-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-ExtraBold-Italic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Black.eot');
-    src: url('../fonts/TT-Norms-Pro-Black.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Black.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Black.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Black.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-Black-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-Black-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-Black-Italic.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-Black-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-Black-Italic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-ExtraBlack.eot');
-    src: url('../fonts/TT-Norms-Pro-ExtraBlack.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-ExtraBlack.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-ExtraBlack.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-ExtraBlack.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: 'ttNormsPro';
-    src: url('../fonts/TT-Norms-Pro-ExtraBlack-Italic.eot');
-    src: url('../fonts/TT-Norms-Pro-ExtraBlack-Italic.otf') format('opentype'),
-        url('../fonts/TT-Norms-Pro-ExtraBlack-Italic.woff2') format('woff2'),
-        url('../fonts/TT-Norms-Pro-ExtraBlack-Italic.woff') format('woff'),
-        url('../fonts/TT-Norms-Pro-ExtraBlack-Italic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: 900;
 }
 
 html {
@@ -352,7 +242,7 @@ html {
 }
 
 body {
-    font-family: 'ttNormsPro';
+    font-family: 'rubik';
     margin: 0;
     padding: 0;
     min-height: 100%;
@@ -573,9 +463,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #wrapper #mainContainer #navbar .navLink {
-    font-family: 'ttNormsPro';
+    font-family: 'rubik';
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
     padding-bottom: 0.8rem;
     color: white;
     position: relative;

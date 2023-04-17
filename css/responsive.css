@@ -60,7 +60,6 @@
     #wrapper #mainContainer #profileSummary #profileDescription h4 {
         width: 100%;
         font-size: 1.5em;
-        font-weight: 300;
     }
     #wrapper #mainContainer #codingLaptopBg::before {
         width: 100%;
@@ -94,7 +93,6 @@
     }
     #wrapper #mainContainer #profileBackground #profileBackgroundContainer p {
         font-size: 1.3rem;
-        font-weight: 300;
     }
     #wrapper #mainContainer #skills {
         margin-top: 0;
@@ -379,7 +377,6 @@
     }
     #wrapper #mainContainer #profileBackground #profileBackgroundContainer p {
         font-size: 1.3rem;
-        font-weight: 300;
     }
     #wrapper #mainContainer #skills {
         margin-top: 0;
