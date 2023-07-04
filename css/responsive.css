@@ -4,8 +4,14 @@
 }
 
 @media (max-width: 575.98px) {
+    * {
+        cursor: inherit;
+    }
     #wrapper #mainContainer #logoNav #logoContainer {
         padding: 2rem 2rem 0;
+    }
+    #wrapper #mainContainer #logoNav #logoContainer a img {
+        cursor: pointer;
     }
     #wrapper #mainContainer #navbar {
         display: none;
@@ -30,6 +36,9 @@
     }
     #wrapper #mainContainer #cursors {
         display: none;
+    }
+    #wrapper.active #mobNavLinks li {
+        cursor: pointer;
     }
     #wrapper #mainContainer #homeHeading {
         padding: 1rem;
@@ -79,10 +88,14 @@
         margin-top: -70%;
     }
     #wrapper #mainContainer #profileImage img {
+        cursor: pointer;
         width: 100%;
     }
     #wrapper #mainContainer #profileImage #resumeContainer {
         width: 100%;
+    }
+    #wrapper #mainContainer #profileImage #resumeContainer a {
+        cursor: pointer;
     }
     #wrapper #mainContainer #profileBackground {
         margin: 0;
@@ -93,6 +106,9 @@
     }
     #wrapper #mainContainer #profileBackground #profileBackgroundContainer p {
         font-size: 1.3rem;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer p a {
+        cursor: pointer;
     }
     #wrapper #mainContainer #skills {
         margin-top: 0;
@@ -155,6 +171,12 @@
         font-size: 1.5rem;
         line-height: 3rem;
     }
+    #wrapper #mainContainer #contactSec #contactContent p a {
+        cursor: pointer;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a { 
+        cursor: pointer;
+    }
     #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer {
         height: 12rem;
         max-height: 12rem;
@@ -179,6 +201,7 @@
     }
     #wrapper #mainContainer #workGallery .project a {
         padding: 1.5rem;
+        cursor: pointer;
     }
     #wrapper #mainContainer #workGallery .project a .projectContent h2 {
         font-size: 3rem;
@@ -214,6 +237,10 @@
     #wrapper #mainContainer #projDesc .projCol-6 #viewProjMobBtn {
         display: inline;
         margin: 0 auto;
+        cursor: pointer;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer a {
+        cursor: pointer;
     }
     #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer #projRolesContainer .projRoles {
         margin-right: 0;
@@ -275,6 +302,7 @@
     }
     #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation {
         width: 100%;
+        cursor: pointer;
     }
     #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation .projNavCol-6 {
         padding: 1.5rem;
@@ -296,6 +324,7 @@
         width: 20%;
         border: 1px solid white;
         margin-right: 2rem;
+        cursor: pointer;
     }
     #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn #projSliderLink {
         font-size: 0.8rem;
@@ -303,8 +332,14 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    * {
+        cursor: inherit;
+    }
     #wrapper #mainContainer #logoNav #logoContainer {
         padding: 2rem 3rem 0;
+    }
+    #wrapper #mainContainer #logoNav #logoContainer a img {
+        cursor: pointer;
     }
     #wrapper #mainContainer #navbar {
         display: none;
@@ -323,6 +358,9 @@
     }
     #wrapper #mainContainer #cursors {
         display: none;
+    }
+    #wrapper.active #mobNavLinks li {
+        cursor: pointer;
     }
     #wrapper #mainContainer #homeHeading {
         padding: 3rem;
@@ -363,10 +401,14 @@
         margin-top: -35%;
     }
     #wrapper #mainContainer #profileImage img {
+        cursor: pointer;
         width: 100%;
     }
     #wrapper #mainContainer #profileImage #resumeContainer {
         width: 100%;
+    }
+    #wrapper #mainContainer #profileImage #resumeContainer a {
+        cursor: pointer;
     }
     #wrapper #mainContainer #profileBackground {
         margin: 0;
@@ -377,6 +419,9 @@
     }
     #wrapper #mainContainer #profileBackground #profileBackgroundContainer p {
         font-size: 1.3rem;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer p a {
+        cursor: pointer;
     }
     #wrapper #mainContainer #skills {
         margin-top: 0;
@@ -427,6 +472,12 @@
         font-size: 2rem;
         line-height: 4rem;
     }
+    #wrapper #mainContainer #contactSec #contactContent p a {
+        cursor: pointer;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a { 
+        cursor: pointer;
+    }
     #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer {
         height: 12rem;
         max-height: 12rem;
@@ -450,6 +501,7 @@
     }
     #wrapper #mainContainer #workGallery .project a {
         padding: 3rem 2rem;
+        cursor: pointer;
     }
     #wrapper #mainContainer #workGallery .project a .projectContent h2 {
         font-size: 4rem;
@@ -481,6 +533,10 @@
     #wrapper #mainContainer #projDesc .projCol-6 #viewProjMobBtn {
         display: inline;
         margin: 0 auto;
+        cursor: pointer;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer a {
+        cursor: pointer;
     }
     #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer #projRolesContainer .projRoles p {
         font-size: 1rem;
@@ -541,9 +597,13 @@
         width: 20%;
         border: 1px solid white;
         margin-right: 1rem;
+        cursor: pointer;
     }
     #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn #projSliderLink {
         font-size: 0.8rem;
+    }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation {
+        cursor: pointer;
     }
     #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation .projNavCol-6 {
         padding: 2rem;
@@ -551,8 +611,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    * {
+        cursor: inherit;
+    }
     #wrapper #mainContainer #logoNav #logoContainer {
         padding: 3rem 3rem 0;
+    }
+    #wrapper #mainContainer #logoNav #logoContainer a img {
+        cursor: pointer;
     }
     #wrapper #mainContainer #navbar {
         display: none;
@@ -571,6 +637,9 @@
     }
     #wrapper #mainContainer #cursors {
         display: none;
+    }
+    #wrapper.active #mobNavLinks li {
+        cursor: pointer;
     }
     #wrapper #mainContainer #homeHeading {
         padding: 3rem;
@@ -608,6 +677,7 @@
         flex-wrap: nowrap;
     }
     #wrapper #mainContainer #profileImage img {
+        cursor: pointer;
         width: 45%;
     }
     #wrapper #mainContainer #profileImage #resumeContainer {
@@ -615,12 +685,18 @@
         align-self: center;
         padding-top: 12rem;
     }
+    #wrapper #mainContainer #profileImage #resumeContainer a {
+        cursor: pointer;
+    }
     #wrapper #mainContainer #profileBackground {
         margin: 0;
         padding: 10rem 3rem 0;
     }
     #wrapper #mainContainer #profileBackground #profileBackgroundContainer h2 {
         font-size: 3.3rem;
+    }
+    #wrapper #mainContainer #profileBackground #profileBackgroundContainer p a {
+        cursor: pointer;
     }
     #wrapper #mainContainer #skills {
         margin-top: 0;
@@ -670,6 +746,12 @@
         font-size: 2rem;
         line-height: 4rem;
     }
+    #wrapper #mainContainer #contactSec #contactContent p a {
+        cursor: pointer;
+    }
+    #wrapper #mainContainer #letsWork .scrollingText a { 
+        cursor: pointer;
+    }
     #wrapper #mainContainer #letsWork .scrollingText a .letsWorkText .scrollContainer {
         height: 12rem;
         max-height: 12rem;
@@ -689,6 +771,7 @@
     }
     #wrapper #mainContainer #workGallery .project a {
         padding: 3rem 2rem;
+        cursor: pointer;
     }
     #wrapper #mainContainer #workGallery .project a .projectContent h2 {
         font-size: 4rem;
@@ -715,6 +798,10 @@
     }
     #wrapper #mainContainer #projDesc .projCol-6 #viewProjMobBtn {
         display: inline;
+        cursor: pointer;
+    }
+    #wrapper #mainContainer #projDesc .projCol-6 .projDescContainer a {
+        cursor: pointer;
     }
     #wrapper #mainContainer #projGallery {
         padding: 10rem 3rem 10rem;
@@ -761,6 +848,9 @@
     #wrapper #mainContainer #projSlider #projImgContainer {
         height: 45vh;
     }
+    #wrapper #mainContainer #projSlider #projSliderNavigation #projNavigation {
+        cursor: pointer;
+    }
     #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #currProjTitle {
         padding: 3rem 1.5rem 3rem 3rem;
     }
@@ -769,13 +859,14 @@
     }
     #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn {
         width: 20%;
+        cursor: pointer;
     }
     #wrapper #mainContainer #projSlider #projSliderNavigation #currProjTitleContainer #viewProjPageBtn #projSliderLink {
         font-size: 1rem;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1299.98px) {
+/* @media (min-width: 992px) and (max-width: 1299.98px) {
     #wrapper #mainContainer #logoNav #logoContainer {
         padding: 3rem 5rem 0;
     }
@@ -999,4 +1090,4 @@
     #wrapper #mainContainer #projGallery #projGallerySec3 {
         margin-bottom: 15rem;
     }
-}
+} */
