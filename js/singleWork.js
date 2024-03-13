@@ -1,7 +1,7 @@
 // Constant variables
 const currProjSliderImg = document.querySelector('#currProjSliderImg');
 const nextProjSliderImg = document.querySelector('#nextProjSliderImg');
-const projSliderImgArray = ['dowco-thumb.jpg', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'capture-the-flag-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg', 'kemlabels-thumb.jpg'];
+const projSliderImgArray = ['dowco-thumb.jpg', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'capture-the-flag-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg', 'kemlabels-thumb.jpg', 'ora-thumb.jpg'];
 var currCount = 0;
 
 var navLinksColor;
@@ -180,6 +180,9 @@ function setProjSliderImg() {
     } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[6]) {
         document.getElementById('projSliderTitle').innerHTML = 'KEMLabels';
         document.getElementById('projSliderLink').setAttribute('href', '/kemlabels/');
+    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[7]) {
+        document.getElementById('projSliderTitle').innerHTML = 'Ora';
+        document.getElementById('projSliderLink').setAttribute('href', '/ora/');
     }
 }
 

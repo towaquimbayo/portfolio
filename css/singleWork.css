@@ -64,6 +64,14 @@
     background-attachment: fixed;
 }
 
+#wrapper #mainContainer #oraBanner {
+    background: url('../img/ora-thumb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #wrapper #mainContainer #projDesc {
     display: flex;
     flex-direction: row;

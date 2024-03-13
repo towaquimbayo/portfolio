@@ -97,6 +97,14 @@
     background-size: cover;
 }
 
+/* Ora */
+#wrapper #mainContainer #workGallery #ora {
+    background: url('../img/ora-thumb.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #wrapper #mainContainer #workGallery .project a {
     display: flex;
     flex-direction: column;
