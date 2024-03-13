@@ -215,7 +215,9 @@
     #wrapper #mainContainer #mymindBanner,
     #wrapper #mainContainer #rtohomesBanner,
     #wrapper #mainContainer #tudorconsultingBanner,
-    #wrapper #mainContainer #capturetheflagBanner {
+    #wrapper #mainContainer #capturetheflagBanner,
+    #wrapper #mainContainer #kemlabelsBanner,
+    #wrapper #mainContainer #oraBanner {
         background-attachment: scroll;
     }
     #wrapper #mainContainer #projDesc {
@@ -511,7 +513,9 @@
     #wrapper #mainContainer #mymindBanner,
     #wrapper #mainContainer #rtohomesBanner,
     #wrapper #mainContainer #tudorconsultingBanner,
-    #wrapper #mainContainer #capturetheflagBanner {
+    #wrapper #mainContainer #capturetheflagBanner,
+    #wrapper #mainContainer #kemlabelsBanner,
+    #wrapper #mainContainer #oraBanner {
         background-attachment: scroll;
     }
     #wrapper #mainContainer #projDesc {
@@ -781,7 +785,9 @@
     #wrapper #mainContainer #mymindBanner,
     #wrapper #mainContainer #rtohomesBanner,
     #wrapper #mainContainer #tudorconsultingBanner,
-    #wrapper #mainContainer #capturetheflagBanner {
+    #wrapper #mainContainer #capturetheflagBanner,
+    #wrapper #mainContainer #kemlabelsBanner,
+    #wrapper #mainContainer #oraBanner {
         background-attachment: scroll;
     }
     #wrapper #mainContainer #projDesc {
