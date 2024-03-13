@@ -1,7 +1,7 @@
 // Constant variables
 const currProjSliderImg = document.querySelector('#currProjSliderImg');
 const nextProjSliderImg = document.querySelector('#nextProjSliderImg');
-const projSliderImgArray = ['dowco-thumb.jpg', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'capture-the-flag-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg'];
+const projSliderImgArray = ['dowco-thumb.jpg', 'pontus-thumb.jpg', 'mymind-thumb.jpg', 'capture-the-flag-thumb.jpg', 'rtohomes-thumb.jpg', 'tudorconsulting-thumb.jpg', 'kemlabels-thumb.jpg'];
 var currCount = 0;
 
 var navLinksColor;
@@ -177,6 +177,9 @@ function setProjSliderImg() {
     } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[5]) {
         document.getElementById('projSliderTitle').innerHTML = 'Tudor Consulting';
         document.getElementById('projSliderLink').setAttribute('href', '/tudorconsulting/');
+    } else if (currProjSliderImg.getAttribute('src') == '../img/' + projSliderImgArray[6]) {
+        document.getElementById('projSliderTitle').innerHTML = 'KEMLabels';
+        document.getElementById('projSliderLink').setAttribute('href', '/kemlabels/');
     }
 }
 
